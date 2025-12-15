@@ -1,0 +1,150 @@
+/* ==========================
+   ESTILOS GENERALES
+   ========================== */
+body {
+  font-family: "Verdana", sans-serif; /* Fuente general */
+  background: #e0f7e0; /* Fondo verde muy suave */
+  margin: 25px; /* Separación del contenido */
+}
+
+/* ==========================
+   TÍTULOS
+   ========================== */
+.titulo-principal {
+  color: #056d2f;
+  text-align: center;
+  font-size: 42px;
+  background: #c0f0c0;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.subtitulo {
+  color: #045a25;
+  text-align: center;
+  font-size: 26px;
+  margin-top: -5px;
+}
+
+/* ==========================
+   LÍNEAS DIVISORIAS
+   ========================== */
+.linea-sólida {
+  border: 3px solid #056d2f;
+}
+
+.linea-dashed {
+  border: 3px dashed #056d2f;
+}
+
+/* ==========================
+   CONTENEDORES
+   ========================== */
+.center {
+  text-align: center;
+  margin: 25px 0;
+}
+
+/* ==========================
+   IMÁGENES
+   ========================== */
+.imagen-principal {
+  border: 5px solid #056d2f;
+  border-radius: 15px;
+  box-shadow: 0 0 12px #76ff9a;
+}
+
+.mapa {
+  border-radius: 12px;
+  border: 4px solid #056d2f;
+}
+
+/* ==========================
+   PÁRRAFOS
+   ========================== */
+.intro {
+  font-size: 19px;
+  background: #d8ffd8;
+  padding: 12px;
+  border-left: 6px solid #056d2f;
+}
+
+.parrafo-verde {
+  font-size: 19px;
+  color: #033d18;
+}
+
+/* ==========================
+   MULTIMEDIA (video/audio)
+   ========================== */
+.video, .audio {
+  border-radius: 12px;
+  border: 5px solid #056d2f;
+}
+
+/* ==========================
+   ENLACES
+   ========================== */
+.link-bold {
+  color: #056d2f;
+  font-weight: bold;
+}
+
+.link-boton {
+  color: #056d2f;
+  background: #c0f0c0;
+  padding: 6px;
+  border-radius: 6px;
+}
+
+/* ==========================
+   TABLAS
+   ========================== */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 18px;
+  margin-top: 10px;
+  border: 2px solid #056d2f;
+}
+
+caption {
+  font-size: 22px;
+  margin-bottom: 12px;
+  color: #056d2f;
+  font-weight: bold;
+}
+
+thead {
+  background: #056d2f;
+  color: white;
+}
+
+th, td {
+  border: 2px solid #056d2f;
+  padding: 9px;
+  text-align: center;
+}
+
+tbody tr:nth-child(odd) {
+  background: #d8ffd8;
+}
+
+tbody tr:nth-child(even) {
+  background: #eafbee;
+}
+
+tfoot {
+  background: #bff0b8;
+}
+
+/* ==========================
+   TEXTO PRE (bloques de código)
+   ========================== */
+.codigo {
+  background: #bff0b8;
+  padding: 12px;
+  font-size: 16px;
+  border: 2px solid #056d2f;
+  border-radius: 6px;
+}

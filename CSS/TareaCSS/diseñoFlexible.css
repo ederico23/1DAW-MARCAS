@@ -1,0 +1,90 @@
+/* ESTILOS GENERALES */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #e74c3c;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    background-color: #f1c40f;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex; /* Flexbox: permite alinear los elementos horizontalmente */
+    justify-content: space-around; /* Separación igual entre enlaces */
+    padding: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.contenedor-principal {
+    display: flex; /* Flexbox principal */
+    flex-wrap: wrap; /* Permite que los elementos bajen de línea si no caben */
+    gap: 10px; /* Espacio entre artículos */
+    padding: 10px;
+}
+
+/* Cada artículo */
+article {
+    background-color: #3498db;
+    color: white;
+    flex: 1 1 300px; /* Flex-grow, flex-shrink, flex-basis */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Aside */
+aside {
+    background-color: #2ecc71;
+    color: white;
+    flex: 1 1 200px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Resaltado */
+.resaltado {
+    background-color: yellow;
+    color: black;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    background-color: #9b59b6;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 768px) {
+    .contenedor-principal {
+        flex-direction: column; /* En pantallas más pequeñas apilamos los elementos */
+    }
+
+    nav ul {
+        flex-direction: column; /* Menú vertical para móviles */
+        align-items: center;
+    }
+}
+
+.contenedor-principal {
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+} 
+

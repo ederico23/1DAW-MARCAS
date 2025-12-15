@@ -1,0 +1,83 @@
+/* Estilos básicos del formulario */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eef7ee;
+    color: #222;
+    margin: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #2d7d46;
+}
+
+.intro {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.imagen-top {
+    display: block;
+    margin: 0 auto 15px auto;
+    border-radius: 6px;
+}
+
+form {
+    max-width: 700px;
+    margin: auto;
+    background: #ffffff;
+    padding: 15px 25px;
+    border-radius: 8px;
+    border: 1px solid #b6c9b6;
+}
+
+fieldset {
+    border: 1px solid #6aa86a;
+    padding: 10px;
+    border-radius: 6px;
+    background: #f4fbf4;
+}
+
+legend {
+    color: #2d7d46;
+    font-size: 17px;
+}
+
+label, p, small {
+    font-size: 15px;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"],
+input[type="color"],
+select {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    padding: 5px;
+    width: 200px;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    padding: 10px 18px;
+    margin: 10px 5px;
+    border: none;
+    background: #2d7d46;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background: #256b3b;
+}
+
+iframe {
+    display: block;
+    margin: 10px auto;
+    border-radius: 6px;
+    border: 1px solid #2d7d46;
+}

@@ -1,0 +1,157 @@
+h1 {
+    color: tomato;
+}
+
+p.especial {
+    color: mediumspringgreen;
+}
+
+p.texto {
+    color : slateblue;
+}
+
+div p {
+    color: aquamarine;
+}
+
+div h2,  div h3 {
+    color: brown;
+}
+
+*{
+    font-size: 24px;
+    /* color: black; */
+}
+
+/*
+esto es un comentario 
+*/
+
+.color{
+   /*  border: 5px black dotted;   */
+    /*
+     dotted
+     dashed
+     solid
+     double
+     groove
+     ridge
+     inset
+     outset
+     none 
+     hidden
+     */
+
+    border-style: solid;
+    border-color: blue;
+    border-radius: 5px;
+    border-width: 5px;
+}
+
+#fondo {
+    background-color: red;
+   /*  opacity: 0.7; */
+    height: 200px;;
+    background-image: url("informatica.jpg");
+    background-size: 100px 100px;
+    background-repeat: repeat-y;
+    background-position: center center;
+/*     background: red url("informatica.jpg") no-repeat center center / cover ; */
+}
+
+.margen {
+    background-color: chocolate; 
+    /* margin: top, right, bottom, left  */
+    margin: 15px 20px 25px 30px ;
+     /*padding: top, right, bottom, left  */
+    padding: 30px 25px 20px 15px ;
+    /*border: tipo, grosor, color*/
+    border: solid 1px black;
+    height: 100px;
+    width: 50px;
+    overflow: scroll;
+    outline: 1px solid red;
+}
+
+.text {
+    font-family: Verdana, Tahoma, sans-serif;
+    text-align: center;
+    text-decoration: overline;
+
+    text-shadow: 3px 5px 2px gray;
+}
+
+a:link {
+    color: blueviolet;
+     
+}
+
+a.visited{
+    color: gray;
+}
+
+a:hover{
+    color: yellow;
+}
+
+a:active{
+    color: red;
+}
+
+ul {
+    background-color: cyan;
+    list-style-type: circle;
+    /* padding-left: 0; */
+    list-style-position: inside;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td{
+    border: solid 1px black;
+    padding: 5px;
+}
+
+th {
+    background-color: tomato;
+    color: white;
+}
+  
+tr:nth-child(even){
+    background-color: lightblue;
+}
+
+tr:hover{
+    background-color: lightgray;
+    cursor: pointer;
+}
+
+span {
+    display: block;
+   /* display: none; */
+   /*visibility: hidden;*/
+    width: 300px;
+    background-color: red;
+}
+
+.inline {
+    display: inline;
+}
+
+#position {
+    position: sticky;
+    left: 20px;
+    top: 25px;
+}
+
+.left {
+    float: left;
+    width: 100px;
+}
+
+.container {
+    height: 200px;
+}

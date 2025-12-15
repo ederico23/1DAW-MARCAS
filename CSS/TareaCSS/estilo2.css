@@ -1,0 +1,131 @@
+/* Estilos generales */
+body {
+  font-family: "Verdana", sans-serif;
+  background: #e0f7e0;
+  margin: 25px;
+}
+
+/* Encabezados */
+.titulo-principal {
+  color: #056d2f;
+  text-align: center;
+  font-size: 42px;
+  background: #c0f0c0;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.subtitulo {
+  color: #045a25;
+  text-align: center;
+  font-size: 26px;
+  margin-top: -5px;
+}
+
+/* Líneas */
+.linea-sólida {
+  border: 3px solid #056d2f;
+}
+
+.linea-dashed {
+  border: 3px dashed #056d2f;
+}
+
+/* Contenedores */
+.center {
+  text-align: center;
+  margin: 25px 0;
+}
+
+/* Imágenes */
+.imagen-principal {
+  border: 5px solid #056d2f;
+  border-radius: 15px;
+  box-shadow: 0 0 12px #76ff9a;
+}
+
+.mapa {
+  border-radius: 12px;
+  border: 4px solid #056d2f;
+}
+
+/* Párrafos */
+.intro {
+  font-size: 19px;
+  background: #d8ffd8;
+  padding: 12px;
+  border-left: 6px solid #056d2f;
+}
+
+.parrafo-verde {
+  font-size: 19px;
+  color: #033d18;
+}
+
+/* Multimedia */
+.video, .audio {
+  border-radius: 12px;
+  border: 5px solid #056d2f;
+}
+
+/* Enlaces */
+.link-bold {
+  color: #056d2f;
+  font-weight: bold;
+}
+
+.link-boton {
+  color: #056d2f;
+  background: #c0f0c0;
+  padding: 6px;
+  border-radius: 6px;
+}
+
+/* Tabla */
+#tabla {
+  color: #056d2f;
+}
+
+#tabla table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 18px;
+}
+
+#tabla caption {
+  font-size: 22px;
+  margin-bottom: 12px;
+  color: #056d2f;
+  font-weight: bold;
+}
+
+#tabla thead {
+  background: #056d2f;
+  color: #f1f1f1;
+}
+
+#tabla th, #tabla td {
+  border: 2px solid #056d2f;
+  padding: 9px;
+}
+
+#tabla tbody tr:nth-child(odd) {
+  background: #d8ffd8;
+}
+
+#tabla tbody tr:nth-child(even) {
+  background: #eafbee;
+}
+
+#tabla tfoot {
+  background: #bff0b8;
+}
+
+/* Pre */
+.codigo {
+  background: #bff0b8;
+  padding: 12px;
+  font-size: 16px;
+  border: 2px solid #056d2f;
+  border-radius: 6px;
+}

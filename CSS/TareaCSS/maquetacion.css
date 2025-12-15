@@ -1,0 +1,72 @@
+/* Reset suave */
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: sans-serif;
+    background: #f8f8f8;
+}
+
+/* Grid general */
+body {
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "nav nav"
+        "article1 aside"
+        "article2 aside"
+        "footer footer";
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+}
+
+/* Estilos generales de cajas */
+header, nav, article, aside, footer {
+    padding: 40px;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+
+/* Header */
+header {
+    grid-area: header;
+    background: #d86c6c;
+    border: 4px solid #b85050;
+}
+
+/* Nav */
+nav {
+    grid-area: nav;
+    background: #f6e3a3;
+    border: 3px solid #d8c67c;
+}
+
+/* Article 1 */
+article:nth-of-type(1) {
+    grid-area: article1;
+    background: #79a6e6;
+    border: 4px dashed #000;
+    border-radius: 25px;
+}
+
+/* Article 2 */
+article:nth-of-type(2) {
+    grid-area: article2;
+    background: #79a6e6;
+    border: 4px dashed #000;
+    border-radius: 50px;
+}
+
+/* Aside */
+aside {
+    grid-area: aside;
+    background: #b7d8a9;
+    border: 6px solid black;
+    border-radius: 15px;
+}
+
+/* Footer */
+footer {
+    grid-area: footer;
+    background: #b9a2d6;
+    border: 4px solid #9983b5;
+}

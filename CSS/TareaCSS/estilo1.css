@@ -1,0 +1,131 @@
+/* Estilos generales */
+body {
+  font-family: Arial;
+  background: #f5fff5;
+  margin: 20px;
+}
+
+/* Encabezados */
+.titulo-principal {
+  color: #0a8f4d;
+  text-align: center;
+  font-size: 40px;
+  background: #d9ffe6;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.subtitulo {
+  color: #0a6f3e;
+  text-align: center;
+  font-size: 24px;
+  margin-top: -10px;
+}
+
+/* Líneas */
+.linea-sólida {
+  border: 2px solid #0a8f4d;
+}
+
+.linea-dashed {
+  border: 2px dashed #0a8f4d;
+}
+
+/* Contenedores */
+.center {
+  text-align: center;
+  margin: 20px 0;
+}
+
+/* Imágenes */
+.imagen-principal {
+  border: 4px solid #0a8f4d;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #7cffb3;
+}
+
+.mapa {
+  border-radius: 10px;
+  border: 3px solid #0a8f4d;
+}
+
+/* Párrafos */
+.intro {
+  font-size: 18px;
+  background: #e8ffe8;
+  padding: 10px;
+  border-left: 5px solid #0a8f4d;
+}
+
+.parrafo-verde {
+  font-size: 18px;
+  color: #044d2a;
+}
+
+/* Multimedia */
+.video, .audio {
+  border-radius: 10px;
+  border: 4px solid #0a8f4d;
+}
+
+/* Enlaces */
+.link-bold {
+  color: #0a8f4d;
+  font-weight: bold;
+}
+
+.link-boton {
+  color: #0a8f4d;
+  background: #d9ffe6;
+  padding: 4px;
+  border-radius: 4px;
+}
+
+/* Tabla */
+#tabla {
+  color: #0a8f4d;
+}
+
+#tabla table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 17px;
+}
+
+#tabla caption {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #0a8f4d;
+  font-weight: bold;
+}
+
+#tabla thead {
+  background: #0a8f4d;
+  color: white;
+}
+
+#tabla th, #tabla td {
+  border: 2px solid #0a8f4d;
+  padding: 8px;
+}
+
+#tabla tbody tr:nth-child(odd) {
+  background: #e8ffe8;
+}
+
+#tabla tbody tr:nth-child(even) {
+  background: #f5fff5;
+}
+
+#tabla tfoot {
+  background: #d9ffe6;
+}
+
+/* Pre */
+.codigo {
+  background: #ccffdd;
+  padding: 10px;
+  font-size: 15px;
+  border: 2px solid #0a8f4d;
+  border-radius: 5px;
+}

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <!-- Declara el tipo de documento -->
+<head>
+  <meta charset="UTF-8">
+
+  <!-- Para que en móviles no se vea todo tiny -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Descripción (cuenta para buscadores y para el profe) -->
+  <meta name="description" content="Página de ejemplo con imágenes, tablas, multimedia y estilos CSS estructurados.">
+
+  <!-- Palabras clave (no son obligatorias pero suman) -->
+  <meta name="keywords" content="HTML, CSS, proyecto, tablas, imágenes, multimedia">
+
+  <!-- Autor del documento -->
+  <meta name="author" content="Eder">
+
+  <!-- Control de idioma -->
+  <meta http-equiv="Content-Language" content="es">
+
+  <!-- Evita problemas de caché al actualizar -->
+  <meta http-equiv="Cache-Control" content="no-cache">
+
+  <!-- Para que navegadores antiguos no rompan tu HTML -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <title>Mi Página Mejorada</title>
+
+  <!-- Conexión a tu CSS -->
+  <link rel="stylesheet" href="estilos.css">
+</head>
+
+</head>
+
+<body>
+  <!-- TÍTULOS PRINCIPALES -->
+  <h1 class="titulo-principal">Título principal (h1)</h1>
+  
+  <h2 class="subtitulo">Subtítulo (h2)</h2>
+
+  <hr class="linea-sólida"> <!-- Línea horizontal sólida -->
+
+  <!-- IMAGEN PRINCIPAL -->
+  <div class="center">
+    <!-- Imagen con estilos -->
+    <img src="ENLACE DE IMAGEN" alt="Imagen principal" class="imagen-principal" width="400" height="250">
+  </div>
+
+  <hr class="linea-dashed"> <!-- Línea discontinua -->
+
+  <!-- TEXTO INTRODUCTORIO -->
+  <p class="intro">Párrafo con fondo, borde y padding.</p>
+  <p class="parrafo-verde">Otro párrafo usando solo color.</p>
+
+  <!-- Texto preformateado -->
+  <pre class="codigo">Texto preformateado respetando saltos y espacios.</pre>
+
+  <hr>
+
+  <!-- MULTIMEDIA -->
+  <h2>Multimedia</h2>
+
+  <!-- Video -->
+  <iframe class="video" width="560" height="315" src="ENLACE DE VIDEO" allowfullscreen></iframe>
+
+  <!-- Audio normal -->
+  <audio class="audio" controls>
+    <source src="ENLACE DE AUDIO" type="audio/mpeg">
+  </audio>
+
+  <!-- Audio oculto autoplay -->
+  <audio autoplay loop hidden>
+    <source src="ENLACE DE AUDIO" type="audio/mpeg">
+  </audio>
+
+  <hr>
+
+  <!-- MAPA DE IMAGEN -->
+  <h2>Mapa de imagen</h2>
+  <img src="ENLACE DE IMAGEN" usemap="#mapa" width="400" height="200" class="mapa">
+
+  <map name="mapa">
+    <!-- Área izquierda -->
+    <area shape="rect" coords="0,0,200,200" href="ENLACE EXTERNO" alt="Ir afuera">
+
+    <!-- Área derecha -->
+    <area shape="rect" coords="200,0,400,200" href="REFERENCIA DE CARPETA/pagina.html" alt="Ir dentro">
+  </map>
+
+  <hr>
+
+  <!-- ENLACES -->
+  <h2>Enlaces</h2>
+  <a class="link-bold" href="REFERENCIA DE CARPETA/pagina.html">Enlace interno</a><br>
+  <a class="link-boton" href="ENLACE EXTERNO" target="_blank">Enlace botón</a>
+
+  <!-- Enviar formulario hacia una web -->
+  <form action="ENLACE EXTERNO" target="_blank">
+    <input type="submit" value="Visitar página">
+  </form>
+
+  <!-- Enlace desde imagen -->
+  <a href="ENLACE EXTERNO">
+    <img src="ENLACE DE IMAGEN" width="120" height="120" alt="Ir a web">
+  </a>
+
+  <hr>
+
+  <!-- INFORMACIÓN AVANZADA -->
+  <p>
+    <em>Texto en cursiva</em>
+    <u>Subrayado</u>
+    <i>Otro tipo de cursiva</i>
+    <del>Tachado</del>
+    <mark>Marcado</mark><br>
+    H<sub>2</sub>O (subíndice)<br>
+    10<sup>2</sup> (superíndice)
+  </p>
+
+  <hr>
+
+  <!-- LISTAS -->
+  <h2>Listas</h2>
+
+  <ol start="3">
+    <li>Ejemplo lista ordenada</li>
+    <li>Ítem</li>
+    <li>Ítem</li>
+  </ol>
+
+  <ul>
+    <li>Lista desordenada
+      <ul>
+        <li>Sublista</li>
+        <li>Sublista</li>
+      </ul>
+    </li>
+  </ul>
+
+  <dl>
+    <dt>Término</dt>
+    <dd>Definición del término.</dd>
+  </dl>
+
+  <hr>
+
+  <!-- TABLA COMPLETA -->
+  <h2 id="tabla">Tabla</h2>
+
+  <table>
+    <caption>Comparativa</caption>
+
+    <thead>
+      <tr>
+        <th>Tipo</th>
+        <th>Ventajas</th>
+        <th>Desventajas</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td>Solar</td>
+        <td>Eficiente</td>
+        <td>Depende del clima</td>
+      </tr>
+    </tbody>
+
+    <tfoot>
+      <tr>
+        <td colspan="3">Fuente de datos</td>
+      </tr>
+    </tfoot>
+  </table>
+
+  <hr>
+
+  <!-- EMOJIS -->
+  <p>&#127793; &#127757; &#9728;</p>
+
+  <hr>
+
+  <!-- CONCLUSIÓN -->
+  <h3>Conclusión</h3>
+  <p>Texto final de tu página.</p>
+
+  <p><small>© 2025 Ejemplo HTML Comentado</small></p>
+
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Formulario Futuro Verde</title>
+  <meta name="description" content="Formulario sobre sostenibilidad, energías limpias y el futuro verde.">
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="estilosFormulario.css">
+</head>
+
+<body>
+
+<img src="imagen1.webp" alt="Descripción 1" width="300">
+
+  <h1>🌱 Formulario: ¿Qué sabes del Futuro Verde?</h1>
+  <p>Rellena este formulario para evaluar tus conocimientos sobre sostenibilidad.</p>
+
+  <!-- FORMULARIO COMPLETO -->
+  <form action="datos.php" method="post" enctype="multipart/form-data">
+
+    <!-- PRIMER FIELDSET -->
+    <fieldset>
+      <legend><b>Datos personales</b></legend>
+
+      <!-- Texto con maxlength -->
+      <label>Tu nombre (máx 20 caracteres):</label><br>
+      <input type="text" name="nombre" maxlength="20" required><br><br>
+
+      <!-- Fecha -->
+      <label>Fecha de hoy:</label><br>
+      <input type="date" name="fecha" required><br><br>
+
+      <!-- Color favorito (tema verde) -->
+      <label>¿Qué color asocias al futuro verde?</label><br>
+      <input type="color" name="colorFav"><br><br>
+    </fieldset>
+
+    <br>
+
+    <!-- SEGUNDO FIELDSET -->
+    <fieldset>
+      <legend><b>Conocimientos sobre sostenibilidad</b></legend>
+
+      <!-- Radios -->
+      <p><b>1. ¿Cuál es la energía renovable más utilizada?</b></p>
+      <label><input type="radio" name="energia" value="solar" required> Solar</label><br>
+      <label><input type="radio" name="energia" value="eolica"> Eólica</label><br>
+      <label><input type="radio" name="energia" value="hidraulica"> Hidráulica</label><br><br>
+
+      <!-- Checkboxes -->
+      <p><b>2. ¿Qué acciones realizas para cuidar el planeta?</b></p>
+      <label><input type="checkbox" name="acciones[]" value="reciclar"> Reciclar</label><br>
+      <label><input type="checkbox" name="acciones[]" value="reutilizar"> Reutilizar objetos</label><br>
+      <label><input type="checkbox" name="acciones[]" value="energias"> Usar energías limpias</label><br><br>
+
+      <!-- Select -->
+      <p><b>3. ¿Qué energía te parece más sostenible?</b></p>
+      <select name="energiaFavorita">
+        <option value="solar">Solar</option>
+        <option value="eolica">Eólica</option>
+        <option value="hidraulica">Hidráulica</option>
+        <option value="biomasa">Biomasa</option>
+      </select><br><br>
+
+      <!-- Number -->
+      <p><b>4. ¿Cuántos kilos de residuos reciclas por semana?</b></p>
+      <input type="number" name="reciclaje" min="0" max="50"><br><br>
+
+      <!-- Range -->
+      <p><b>5. Nivel de preocupación por el cambio climático:</b></p>
+      <input type="range" name="preocupacion" min="0" max="10"><br>
+      <small>0 = nada — 10 = muchísimo</small><br><br>
+
+      <!-- Pattern (regex) -->
+      <p><b>6. Introduce un correo válido:</b></p>
+      <input type="text" name="correo" pattern="^[^@]+@[^@]+\.[a-zA-Z]{2,}$" 
+             placeholder="ejemplo@gmail.com" required>
+      <br><br>
+    </fieldset>
+
+    <br>
+
+    <!-- TERCER FIELDSET -->
+    <fieldset>
+      <legend><b>Archivos y multimedia</b></legend>
+
+      <!-- File / imagen -->
+      <label>Sube una imagen relacionada con el medio ambiente:</label><br>
+      <input type="file" name="foto"><br><br>
+
+      <!-- Iframe -->
+      <p><b>Vídeo educativo sobre energías renovables:</b></p>
+      <iframe width="400" height="250"
+              src="https://www.youtube.com/embed/O9dclcdbhz8"
+              title="El país que lidera el futuro verde"
+              frameborder="0"
+              allowfullscreen></iframe>
+    </fieldset>
+
+    <br><br>
+
+    <!-- Botones -->
+    <input type="submit" value="Enviar formulario">
+    <input type="reset" value="Limpiar formulario">
+
+  </form>
+
+</body>
+</html>
