@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>tabla</title>
+    <style>
+        
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 5px;
+        }
+
+        .input-group {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="input-group">
+        <input type="text" id="dato1" placeholder="Nombre">
+        <input type="text" id="dato2" placeholder="Edad">
+        <button onclick="add()">añadir</button>
+    </div>
+
+    <table id="tabla">
+        <tr>
+            <th>Nombre</th>
+            <th>Edad</th>
+        </tr>
+    </table>
+
+    <script>
+        function add() {
+            let n = document.getElementById('dato1');
+            let e = document.getElementById('dato2');
+
+            if (n.value && e.value) {
+                let tabla = document.getElementById('tabla');
+                let fila = tabla.insertRow();
+                fila.insertCell(0).innerHTML = n.value;
+                fila.insertCell(1).innerHTML = e.value;
+
+                // Limpiar campos
+                n.value = '';
+                e.value = '';
+            }
+        }
+    </script>
+
+</body>
+
+</html>

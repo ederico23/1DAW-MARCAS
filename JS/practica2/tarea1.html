@@ -3,10 +3,48 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
-    <title>Documento</title>
+    <title>Texto Expandible</title>
+    <style>
+       
+
+        #texto-extra {
+            display: none;
+            
+        }
+
+        #btn-mas {
+            color: blue;
+            cursor: pointer;
+            text-decoration: underline;
+            font-weight: bold;
+        }
+    </style>
 </head>
 
 <body>
-    <p> hola esto es una tarea para lenguaje de marcas</p>
+
+    <p id="parrafo">
+       hola estamos en 1 DAW vespertirno
+        <span id="texto-extra">
+          concretamente en lenguaje de marcas con nuestro tutor.
+        </span>
+        <span id="btn-mas">más...</span>
+    </p>
+
+    <script>
+        const btnMas = document.getElementById('btn-mas');
+        const textoExtra = document.getElementById('texto-extra');
+
+        btnMas.addEventListener('click', function () {
+            
+            textoExtra.style.display = 'inline';
+           
+            btnMas.style.display = 'none';
+        });
+    </script>
+
 </body>
+
+</html>
