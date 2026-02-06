@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>Tecnologías Verdes &#127807; | Futuro Verde</title>
+    <!-- Favicon -->
+    <link rel="icon" href="Imagenes/TECNOLOGIASS.png" type="image/webp">
+    <meta name="description" content="Listado de tecnologías sostenibles y consejos ecológicos.">
+    <link rel="stylesheet" href="estilosTECNOLOGIAS.css">
+</head>
+
+<body>
+
+    <h1>Tecnologías Limpias</h1>
+    <h2>Avances hacia un futuro sostenible</h2>
+
+    <p id="texto_borrar">
+        Las <b>energías renovables</b> son la base del
+        <abbr title="Desarrollo Sostenible">DS</abbr>.<br>
+        Estas son algunas de las más prometedoras:
+    </p>
+    <button onclick="eliminar()"> eliminar el texto de arrib</button>
+
+    <script>
+        function eliminar() {
+            let elemento = document.getElementById("texto_borrar");
+            if (elemento) {
+                elemento.remove();
+            } else {
+                alert("el texto ya se ha eliminado");
+            }
+        }
+    </script>
+
+    <ul>
+        <li><a href="https://es.wikipedia.org/wiki/Energ%C3%ADa_solar" target="_blank">Energía solar &#9728;&#65039;</a>
+        </li>
+        <li><a href="https://es.wikipedia.org/wiki/Energ%C3%ADa_e%C3%B3lica" target="_blank">Energía eólica
+                &#127788;&#65039;</a></li>
+        <li><a href="https://es.wikipedia.org/wiki/Biomasa_(energ%C3%ADa)" target="_blank">Biomasa &#127807;</a></li>
+    </ul>
+
+    <hr>
+
+    <h2>Galería</h2>
+
+    <!-- Imágenes con atributos de tamaño -->
+    <img src="https://imgs.search.brave.com/2VEQymh9vGkWPKZ32xy6tNQ89KS8uclUKzrFoT1HYVs/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly90aHVt/YnMuZHJlYW1zdGlt/ZS5jb20vYi9jb25j/ZXB0by1kZWwtcGFu/ZWwtc29sYXItZW5l/cmclQzMlQURhLXZl/cmRlLTE0MDk4NTA0/LmpwZw"
+        width="300" height="200" alt="Paneles solares">
+    <img src="https://imgs.search.brave.com/deKYpDWLhoQhqheQkn_HHVJd3BpAaH6BjElqruFn5MU/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTQw/MTgxMjk1Mi9lcy9m/b3RvL2Etcm93LW9m/LXdpbmQtdHVyYmlu/ZXMtaW4tc3Vubnkt/cnVyYWwtZnJhbmNl/LWNsZWFuLXJlbmV3/YWJsZS1lbmVyZ3ku/anBnP3M9NjEyeDYx/MiZ3PTAmaz0yMCZj/PVFPVHpDb3RaTWV4/ZU1yZ0ZDUmhER0M5/QzFYczFhNldQRlpa/SVRXMHVWbVU9"
+        width="40%" height="40%" alt="Molinos eólicos">
+    <br>
+
+    <!-- Enlace interno para volver -->
+    <a href="PAGINA PRINCIPAL.html">&#11013;&#65039; Volver a la página principal</a>
+
+    <hr>
+    <a href="formulario.html">HACER FORMULARIO</a>
+</body>
+
+</html>
