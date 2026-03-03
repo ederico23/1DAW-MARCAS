@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+  <channel>
+    <title>Futuro Verde - Noticias Sostenibles</title>
+    <link>index.html</link>
+    <description>Tu portal de confianza sobre energías renovables y medio ambiente.</description>
+    <language>es-es</language>
+    <lastBuildDate>Sat, 07 Feb 2026 09:00:00 GMT</lastBuildDate>
+
+    <item>
+      <title>Energía Solar: El poder del Sol</title>
+      <link>index.html#tabla</link>
+      <description>Descubre cómo la energía fotovoltaica está transformando el consumo en viviendas y fábricas.</description>
+    </item>
+
+    <item>
+      <title>Parques Eólicos y su Eficiencia</title>
+      <link>tecnologias.html</link>
+      <description>Análisis sobre la alta eficiencia de los aerogeneradores y su impacto visual en el paisaje.</description>
+    </item>
+
+    <item>
+      <title>Multimedia Verde: El país líder</title>
+      <link>multimedia.html</link>
+      <description>No te pierdas nuestro último vídeo sobre las naciones que encabezan la transición ecológica.</description>
+    </item>
+  </channel>
+</rss>
+
