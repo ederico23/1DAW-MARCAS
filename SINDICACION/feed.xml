@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- es el contenedor padre -->
 <rss version="2.0">
+
+<!-- contiene toda la info del canal, titulo desc... -->
   <channel>
     <title>Futuro Verde - Noticias Sostenibles</title>
     <link>index.html</link>
@@ -7,6 +11,7 @@
     <language>es-es</language>
     <lastBuildDate>Sat, 07 Feb 2026 09:00:00 GMT</lastBuildDate>
 
+<!-- cada noticia individual, depende de las notas que publiques habra un bloque por cada una-->
     <item>
       <title>Energía Solar: El poder del Sol</title>
       <link>index.html#tabla</link>
