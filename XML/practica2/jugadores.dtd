@@ -1,0 +1,15 @@
+<!-- Definición del DTD para la lista de jugadores -->
+<!ELEMENT jugadores (jugador+)>
+
+<!-- Definición de elementos -->
+<!ELEMENT jugador (nombre, apellido, edad, valorMercado, juegaSeleccion)>
+
+<!-- Definición de atributos -->
+<!ATTLIST jugador id ID #REQUIRED>
+
+<!-- Definición de datos s-->
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT apellido (#PCDATA)>
+<!ELEMENT edad (#PCDATA)>
+<!ELEMENT valorMercado (#PCDATA)>
+<!ELEMENT juegaSeleccion (#PCDATA)>

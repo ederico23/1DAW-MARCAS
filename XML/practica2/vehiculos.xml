@@ -1,0 +1,43 @@
+<?xml version = "1.0" encoding="UTF-8"?>
+<!DOCTYPE vehiculos SYSTEM "vehiculos.dtd">
+
+<vehiculos>
+
+    <coches>
+
+        <coche matricula=" ">
+            <planta_aparcamiento> </planta_aparcamiento>
+            <marca> </marca>
+            <modelo> </modelo>
+            <color> </color>
+            <minusválido> </minusválido>   
+            <matriculacion> </matriculacion>
+            <imagen extension="" nombre="" />
+            <propietario> 
+                <nombre dni=" "></nombre>
+                <apellidos> </apellidos>
+                <telefono> </telefono>
+            </propietario>
+        </coche>
+
+    </coches>
+
+    <motos>
+
+        <moto matricula=" ">
+            <planta_aparcamiento> </planta_aparcamiento>
+            <marca> </marca>
+            <modelo> </modelo>
+            <color> </color>
+            <minusválido> </minusválido>   
+            <matriculacion> </matriculacion>
+            <imagen extension="" nombre=""/>
+            <propietario> 
+                <nombre dni=" "></nombre>
+                <apellidos> </apellidos>
+                <telefono> </telefono>
+            </propietario>
+        </moto>
+    
+    </motos>
+</vehiculos>

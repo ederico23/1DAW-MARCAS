@@ -1,0 +1,68 @@
+[!-- 1. NOTACIONES Y ENTIDADES (Configuracion del PDF) --]
+
+[!-- Define el formato externo para Acrobat Reader --]
+<!NOTATION pdf_format SYSTEM "Adobe Acrobat Reader">
+
+[!-- Crea la entidad 'pdf_adjunto' que apunta al archivo fisico. NDATA lo vincula al formato --]
+<!ENTITY pdf_adjunto SYSTEM "factura_escaneada.pdf" NDATA pdf_format>
+
+
+[!-- 2. ESTRUCTURA DE LOS ELEMENTOS (Las etiquetas) --]
+
+[!-- Raiz 'factura'. Sus hijos deben ir en este ORDEN exacto separados por comas --]
+<!ELEMENT factura (encabezado, productos, pago, pagado, documento_adjunto, estado_entrega)>
+
+[!-- El encabezado tiene fecha y observacion. El simbolo '?' indica que la observacion es OPCIONAL --]
+<!ELEMENT encabezado (fecha_emision, observacion_adicional?)>
+
+[!-- El simbolo '+' obliga a que haya MINIMO UN 'producto' dentro de 'productos' --]
+<!ELEMENT productos (producto+)>
+
+[!-- Define los 4 datos obligatorios que componen cada producto --]
+<!ELEMENT producto (descripcion, cantidad, precio_unitario, subtotal)>
+
+[!-- Define los elementos obligatorios de la seccion de pago --]
+<!ELEMENT pago (forma_pago, fecha_vencimiento)>
+
+[!-- EMPTY: Indica que estas etiquetas NO llevan texto dentro, solo llevan atributos --]
+<!ELEMENT pagado EMPTY>
+<!ELEMENT documento_adjunto EMPTY>
+
+[!-- #PCDATA: Define que estas etiquetas si que contienen texto normal dentro --]
+<!ELEMENT fecha_emision (#PCDATA)>
+<!ELEMENT observacion_adicional (#PCDATA)>
+<!ELEMENT descripcion (#PCDATA)>
+<!ELEMENT cantidad (#PCDATA)>
+<!ELEMENT precio_unitario (#PCDATA)>
+<!ELEMENT subtotal (#PCDATA)>
+<!ELEMENT forma_pago (#PCDATA)>
+<!ELEMENT fecha_vencimiento (#PCDATA)>
+<!ELEMENT estado_entrega (#PCDATA)>
+
+
+[!-- 3. ATRIBUTOS (Las reglas que van dentro de las etiquetas) --]
+
+[!-- 'numero' es tipo ID (identificador unico). #REQUIRED significa que es obligatorio --]
+<!ATTLIST factura 
+          numero ID #REQUIRED>
+
+[!-- 'id_producto' es el ID unico para cada producto (necesario para las referencias) --]
+<!ATTLIST producto 
+          id_producto ID #REQUIRED>
+
+[!-- IDREF: Indica que este valor debe coincidir con un ID que ya existe (el del producto) --]
+[!-- #IMPLIED: El atributo es opcional, puede no aparecer --]
+<!ATTLIST observacion_adicional 
+          producto_revisar IDREF #IMPLIED>
+
+[!-- NMTOKEN: Indica un valor de texto simple sin espacios (token) --]
+<!ATTLIST pagado 
+          descuento_aplicado NMTOKEN #IMPLIED>
+
+[!-- ENTITY: Obliga a que el valor de este atributo sea una entidad externa (pdf_adjunto) --]
+<!ATTLIST documento_adjunto 
+          archivo_pdf ENTITY #REQUIRED>
+
+[!-- Lista de valores: Solo permite elegir entre Pendiente, Enviado o Entregado --]
+<!ATTLIST estado_entrega 
+          estado (Pendiente | Enviado | Entregado) #IMPLIED>

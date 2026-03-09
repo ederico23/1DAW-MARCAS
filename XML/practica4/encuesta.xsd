@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:simpleType name="tipoNota">
+    <xs:restriction base="xs:integer">
+      <xs:minInclusive value="0"/>
+      <xs:maxInclusive value="10"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="tipoComentario">
+    <xs:restriction base="xs:string">
+      <xs:maxLength value="250"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:element name="encuesta">
+    <xs:complexType>
+      <xs:sequence>
+        
+        <xs:element name="grupo">
+          <xs:simpleType>
+            <xs:restriction base="xs:string">
+              <xs:enumeration value="DAW1D"/>
+              <xs:enumeration value="DAM1D"/>
+              <xs:enumeration value="ASIR1"/>
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+
+        <xs:element name="valoracion_general" type="tipoNota"/>
+        <xs:element name="adecuacion_contenidos" type="tipoNota"/>
+        <xs:element name="valoracion_precio" type="tipoNota"/>
+
+        <xs:element name="comentarios" type="tipoComentario" minOccurs="0"/>
+
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+</xs:schema>

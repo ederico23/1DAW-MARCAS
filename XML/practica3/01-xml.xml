@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<factura xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="factura.xsd"
+         numero="F-2025-001"> 
+        
+    <encabezado>
+
+        <fecha_emision>2025-01-01</fecha_emision>
+        <observacion_adicional producto_revisar="PRD002">
+            Garantía extendida activada.
+        </observacion_adicional>
+
+    </encabezado>
+
+
+    <productos>
+
+        <producto id_producto="PRD001"> 
+            <descripcion>Monitor 4K</descripcion>
+            <cantidad>1</cantidad> <precio_unitario>450.00</precio_unitario>
+            <subtotal>450.00</subtotal>
+        </producto>
+
+        <producto id_producto="PRD002">
+            <descripcion>Teclado Mecánico</descripcion>
+            <cantidad>2</cantidad>
+            <precio_unitario>120.00</precio_unitario>
+            <subtotal>240.00</subtotal>
+        </producto>
+        
+    </productos>
+
+
+    <pago>
+
+        <forma_pago>Transferencia</forma_pago>
+        <fecha_vencimiento>2025-01-31</fecha_vencimiento>
+
+    </pago>
+
+    <pagado descuento_aplicado="SI"/> <documento_adjunto archivo_pdf="pdf_adjunto"/>
+
+    <estado_entrega estado="Entregado">Confirmado</estado_entrega>
+
+    
+</factura>

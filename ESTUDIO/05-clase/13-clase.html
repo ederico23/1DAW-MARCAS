@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <!-- añadimos una una imagen que luego se cambiara-->
+     <img id = "imagenAcambiar" src = "https://goo.su/dIpHalM" alt="perro"> 
+    
+     <br>
+     <!-- añadimos un botón para cambiar la imagen -->
+     <button onclick="cambiarImagen('https://goo.su/LDff')">Cambiar Imagen</button>
+    <script>
+
+        function cambiarImagen(nuevaRuta) {
+             document.getElementById('imagenAcambiar').src = nuevaRuta;
+        }
+    
+    </script>
+
+</body>
+
+</html>

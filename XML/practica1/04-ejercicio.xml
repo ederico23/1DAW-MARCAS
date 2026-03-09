@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<wikipedia>
+
+    <paises>
+
+        <pais id = "p1">
+            <nombre>España</nombre>
+            <capital>Madrid</capital>
+            <poblacion>47 millones</poblacion>
+        </pais>
+
+        <pais id = "p2">
+            <nombre>Italia</nombre>
+            <capital>Roma</capital>
+            <poblacion>60 millones</poblacion>
+        </pais>
+
+        <pais id = "p3">
+            <nombre>Georgia</nombre>
+            <capital>Tiblisi</capital>
+            <poblacion>4 millones</poblacion>
+        </pais>
+
+    </paises>
+    
+</wikipedia>

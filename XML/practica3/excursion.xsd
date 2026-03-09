@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:simpleType name="tipoIdAlumno">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[0-9]{8}[A-Z]|[XYZ][0-9]{7}[A-Z]"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="tipoGrupo">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="DAW1D"/>
+      <xs:enumeration value="DAM1D"/>
+      <xs:enumeration value="ASIR1"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:element name="excursion">
+    <xs:complexType>
+      <xs:sequence>
+        
+        <xs:element name="profesor" minOccurs="1" maxOccurs="5">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="nombre" type="xs:string"/>
+              <xs:element name="NRP" type="xs:string"/>
+              <xs:element name="telefono" type="xs:string"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+
+        <xs:element name="alumno" minOccurs="10" maxOccurs="100">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="nombre" type="xs:string"/>
+              <xs:element name="telefono_padres" type="xs:string"/>
+              <xs:element name="fecha_nacimiento" type="xs:date"/>
+              <xs:element name="edad" type="xs:integer"/>
+            </xs:sequence>
+            <xs:attribute name="id_alumno" type="tipoIdAlumno" use="required"/>
+            <xs:attribute name="grupo" type="tipoGrupo" default="DAW1D"/>
+          </xs:complexType>
+        </xs:element>
+
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+</xs:schema>

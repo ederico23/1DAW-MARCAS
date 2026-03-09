@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id = "parrafo">
+        este es el texto inicial de mi pagina.
+        <span id = "leerMas" onclick = "mostrarMas()">
+            más...
+        </span>
+        <span id = "textoOculto" style="display: none;">
+            este es el texto oculto tras darle ahi.
+        </span>
+    </p>
+
+    <script>
+        function mostrarMas() {
+            let extra = document.getElementById("textoOculto");
+            let boton = document.getElementById("leerMas");
+            extra.style.display = "inline";
+            boton.style.display = "none";
+        }
+    </script>
+</body>
+
+</html>

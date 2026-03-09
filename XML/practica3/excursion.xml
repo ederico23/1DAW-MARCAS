@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<excursion xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:noNamespaceSchemaLocation="excursion.xsd">
+
+    <profesor>
+        <nombre>Javier Rodríguez</nombre>
+        <NRP>1234567890A2025</NRP>
+        <telefono>600111222</telefono>
+    </profesor>
+
+    <alumno id_alumno="12345678Z" grupo="DAW1D">
+        <nombre>Carla Pérez</nombre>
+        <telefono_padres>699888777</telefono_padres>
+        <fecha_nacimiento>2005-05-15</fecha_nacimiento>
+        <edad>20</edad>
+    </alumno>
+
+    </excursion>

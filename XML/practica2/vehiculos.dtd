@@ -1,0 +1,31 @@
+<!ELEMENT vehiculos (coches|motos)*>
+
+<!ELEMENT coches (coche)>
+<!ELEMENT coche (planta_aparcamiento, marca, modelo, color, minusválido, matriculacion, imagen, propietario)>
+
+<!ATTLIST coche
+          matricula CDATA #REQUIRED>
+<!ELEMENT planta_aparcamiento (#PCDATA)>
+<!ELEMENT marca (#PCDATA)>
+<!ELEMENT modelo (#PCDATA)>
+<!ELEMENT color (#PCDATA)>
+<!ELEMENT minusválido (#PCDATA)>
+<!ELEMENT matriculacion (#PCDATA)>
+
+<!ELEMENT imagen EMPTY>
+<!ATTLIST imagen
+          extension CDATA #REQUIRED
+          nombre CDATA #REQUIRED>
+
+<!ELEMENT propietario (nombre, apellidos, telefono)>
+<!ELEMENT nombre (#PCDATA)>
+<!ATTLIST nombre
+          dni CDATA #REQUIRED>
+<!ELEMENT apellidos (#PCDATA)>
+<!ELEMENT telefono (#PCDATA)>
+
+<!ELEMENT motos (moto)>
+<!ELEMENT moto (planta_aparcamiento, marca, modelo, color, minusválido, matriculacion, imagen, propietario)>
+
+<!ATTLIST moto
+          matricula CDATA #REQUIRED>

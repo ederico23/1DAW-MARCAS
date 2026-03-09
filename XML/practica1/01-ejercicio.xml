@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- etiqueta de ciudades-->
+<ciudades>
+
+    <ciudad continente = "Europa">
+        <nombre> Tiblisi </nombre>
+        <pais> Georgia </pais>
+    </ciudad>
+
+    <ciudad continente = "Europa">  
+        <nombre> Madrid </nombre>
+        <pais> España </pais>
+    </ciudad>
+
+    <ciudad continente = "Europa">
+        <nombre> Roma </nombre>
+        <pais> Italia </pais>
+    </ciudad>
+
+</ciudades>
+

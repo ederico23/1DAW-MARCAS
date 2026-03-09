@@ -1,35 +1,46 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cambio de Color con Teclado</title>
-
 </head>
-
 <body>
 
     <h1>Presiona la tecla "Enter"</h1>
     <p>Cada vez que presiones Enter, el fondo cambiará a un color aleatorio.</p>
 
     <script>
-
+        // Escuchamos cualquier pulsación de tecla en toda la ventana (window)
         window.addEventListener('keydown', function (event) {
 
+            // Comprobamos si la tecla que se ha presionado es exactamente "Enter"
             if (event.key === "Enter") {
 
+                // Generamos un número entero aleatorio entre 0 y 255 para el ROJO
+                // Math.random() da un decimal entre 0 y 1, lo multiplicamos por 256
+                // y Math.floor() quita los decimales para dejarlo entero.
                 const rojo = Math.floor(Math.random() * 256);
+
+                // Hacemos lo mismo para el VERDE
                 const verde = Math.floor(Math.random() * 256);
+
+                // Hacemos lo mismo para el AZUL
                 const azul = Math.floor(Math.random() * 256);
 
+                // Creamos una cadena de texto con el formato que entiende CSS: rgb(R, G, B)
+                // Usamos las comillas invertidas (``) para insertar las variables fácilmente.
                 const nuevoColor = `rgb(${rojo}, ${verde}, ${azul})`;
 
+                // Accedemos al estilo del cuerpo de la página (body)
+                // y le asignamos el nuevo color al fondo (backgroundColor)
                 document.body.style.backgroundColor = nuevoColor;
+                
+                // (Opcional) Mostramos el código del color en la consola para depurar
+                console.log("Nuevo color aplicado: " + nuevoColor);
             }
         });
     </script>
 
 </body>
-
 </html>

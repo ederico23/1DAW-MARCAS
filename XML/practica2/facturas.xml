@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE factura SYSTEM "facturas.dtd">
+
+<factura numero=”F-2025-001”>
+
+    <encabezado>
+      	<fecha_emision>2025-01-01</fecha_emision>
+        <observacion_adicional producto_revisar="PRD002">El producto 002 tiene una garantía extendida de 5 años.</observacion_adicional>
+    </encabezado>
+
+
+    <productos>
+        <producto id_producto="PRD001">
+
+            <descripcion>Monitor 4K</descripcion>
+            <cantidad>1</cantidad>
+            <precio_unitario>450.00</precio_unitario>
+            <subtotal>450.00</subtotal>
+
+        </producto>
+
+
+        <producto id_producto="PRD002">
+
+            <descripcion>Teclado Mecánico</descripcion>
+            <cantidad>2</cantidad>
+            <precio_unitario>120.00</precio_unitario>
+            <subtotal>240.00</subtotal>
+
+        </producto>
+
+
+    </productos>
+
+
+    <pago>
+
+        <forma_pago>Transferencia Bancaria</forma_pago>
+        <fecha_vencimiento>2025-01-31</fecha_vencimiento>
+
+    </pago>
+
+
+    <pagado descuento_aplicado="SI"/>
+
+    <documento_adjunto archivo_pdf="pdf_adjunto"/>
+
+    <estado_entrega estado="Entregado">Confirmado por el cliente</estado_entrega>
+
+
+</factura>

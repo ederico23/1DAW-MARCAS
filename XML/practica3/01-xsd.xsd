@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:simpleType name="tipoNumeroFactura">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="F-[0-9]{4}-[0-9]{3}"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="tipoIdProducto">
+    <xs:restriction base="xs:string">
+      <xs:length value="6"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="tipoCantidad">
+    <xs:restriction base="xs:integer">
+      <xs:minInclusive value="0"/>
+      <xs:maxInclusive value="1000"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="tipoDescuento">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="SI"/>
+      <xs:enumeration value="NO"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:element name="factura">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="encabezado">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="fecha_emision" type="xs:date"/>
+              <xs:element name="observacion_adicional" minOccurs="0">
+                <xs:complexType>
+                  <xs:simpleContent>
+                    <xs:extension base="xs:string">
+                      <xs:attribute name="producto_revisar" type="xs:string"/>
+                    </xs:extension>
+                  </xs:simpleContent>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+
+        <xs:element name="productos">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="producto" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="descripcion" type="xs:string"/>
+                    <xs:element name="cantidad" type="tipoCantidad"/>
+                    <xs:element name="precio_unitario" type="xs:decimal"/>
+                    <xs:element name="subtotal" type="xs:decimal"/>
+                  </xs:sequence>
+                  <xs:attribute name="id_producto" type="tipoIdProducto" use="required"/>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+
+        <xs:element name="pago">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="forma_pago" type="xs:string"/>
+              <xs:element name="fecha_vencimiento" type="xs:date"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+
+        <xs:element name="pagado">
+          <xs:complexType>
+            <xs:attribute name="descuento_aplicado" type="tipoDescuento" use="required"/>
+          </xs:complexType>
+        </xs:element>
+
+        <xs:element name="documento_adjunto">
+          <xs:complexType>
+            <xs:attribute name="archivo_pdf" type="xs:string" use="required"/>
+          </xs:complexType>
+        </xs:element>
+
+        <xs:element name="estado_entrega">
+          <xs:complexType>
+            <xs:simpleContent>
+              <xs:extension base="xs:string">
+                <xs:attribute name="estado" type="xs:string"/>
+              </xs:extension>
+            </xs:simpleContent>
+          </xs:complexType>
+        </xs:element>
+
+      </xs:sequence>
+      <xs:attribute name="numero" type="tipoNumeroFactura" use="required"/>
+    </xs:complexType>
+  </xs:element>
+
+</xs:schema>

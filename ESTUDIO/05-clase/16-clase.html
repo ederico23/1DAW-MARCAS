@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>Suma con Onclick</title>
+
+</head>
+
+<body>
+
+    <h2>Calculadora sencilla</h2>
+
+    <p id="frase-suma" onclick="mostrarResultado()">
+        La suma de los números introducidos es: <span id="resultado"> (dame clic)</span>
+    </p>
+
+    <script>
+        // 1. Solicitamos los números al cargar la página
+        let n1 = Number(prompt("Introduce el primer número:"));
+        let n2 = Number(prompt("Introduce el segundo número:"));
+
+        // 2. Definimos la función suma (solo calcula el valor)
+        function suma(a, b) {
+            return a + b;
+        }
+
+        // 3. Función que se activa con el evento onclick
+        function mostrarResultado() {
+            // Llamamos a la función suma y guardamos el valor
+            let resultadoFinal = suma(n1, n2);
+            
+            // Buscamos el lugar donde queremos escribir el resultado, innerText para rellenaer el texto
+            document.getElementById("resultado").innerText = resultadoFinal;
+        
+        }
+    </script>
+
+</body>
+</html>

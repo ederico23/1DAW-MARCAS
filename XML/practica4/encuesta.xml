@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<encuesta xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:noNamespaceSchemaLocation="encuesta.xsd">
+
+    <grupo>DAW1D</grupo>
+    <valoracion_general>9</valoracion_general>
+    <adecuacion_contenidos>8</adecuacion_contenidos>
+    <valoracion_precio>10</valoracion_precio>
+    <comentarios>La visita al Mare Nostrum fue espectacular, muy bien organizada.</comentarios>
+
+</encuesta>
