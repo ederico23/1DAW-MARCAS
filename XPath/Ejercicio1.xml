@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+
+<ies> 
+    
+    <nombre>IES Abastos</nombre> 
+    <web>http://www.iesabastos.org</web> 
+
+    <ciclos> 
+    
+        <ciclo id="ASIR"> 
+            <nombre>Administración de Sistemas Informáticos en Red</nombre> 
+            <grado>Superior</grado> 
+            <decretoTitulo año="2009" /> 
+    
+        </ciclo> 
+
+        <ciclo id="DAW"> 
+        
+            <nombre>Desarrollo de Aplicaciones Web</nombre> 
+            <grado>Superior</grado> 
+            <decretoTitulo año="2010" /> 
+
+        </ciclo> 
+
+        <ciclo id="SMR"> 
+
+            <nombre>Sistemas Microinformáticos y Redes</nombre> 
+            <grado>Medio</grado> 
+            <decretoTitulo año="2008" /> 
+
+        </ciclo> 
+
+    </ciclos> 
+
+</ies> 
+
+
+<!-- 
+
+EJERCICIO 1
+/ies/nombre
+-->
+
+<!--
+
+EJERCICIO 2
+/ies/web
+
+-->
+
+<!--
+
+EJERCICIO 3
+//ciclo/nombre
+
+-->
+
+<!-- 
+
+EJERCICIO 4
+//ciclos/ciclo/@id
+
+-->
+
+<!-- 
+
+EJERCICIO 5
+//ciclos/ciclo/decretoTitulo/@año
+
+-->
+
+<!-- 
+
+EJERCICIO 6
+//ciclo[grado="Medio"]
+//ciclos/ciclo[grado="Medio"]
+
+-->
+
+<!-- 
+
+EJERCICIO 7
+//ciclo[grado="Superior"]/nombre
+/ies/ciclos/ciclo[grado="Superior"]/nombre
+
+-->
+
+
+<!-- 
+
+EJERCICIO 8
+//ciclo[decretoTitulo/@año < 2010]/nombre
+/ies/ciclos/ciclo[decretoTitulo/@año < 2010]/nombre
+
+-->
+
+
+<!-- 
+
+EJERCICIO 8
+//ciclos/ciclo[grado = "Medio"]/nombre
+
+-->
+
+<!-- 
+
+EJERCICIO 9
+ 
+
+-->
