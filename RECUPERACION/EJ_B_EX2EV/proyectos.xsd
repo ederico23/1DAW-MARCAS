@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    
+    <!-- ============================================
+         TIPOS SIMPLES PERSONALIZADOS
+         Solo texto con alguna restricción, sin hijos
+         ============================================ -->
+    
+    <!-- El id debe seguir el formato PRJ-2026-XXX (3 dígitos al final) -->
+    <xs:simpleType name="tipoId">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="PRJ-2026-[0-9]{3}"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <!-- grupo solo puede valer uno de estos tres valores -->
+    <xs:simpleType name="tipoGrupo">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="DAW2"/>
+            <xs:enumeration value="DAM2"/>
+            <xs:enumeration value="ASIR2"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <!-- nota_final es decimal y debe estar entre 0 y 10 -->
+    <xs:simpleType name="tipoNota">
+        <xs:restriction base="xs:decimal">
+            <xs:minInclusive value="0"/>
+            <xs:maxInclusive value="10"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    
+    <!-- ============================================
+         TIPOS COMPLEJOS
+         Tienen hijos o atributos, necesitan complexType
+         ============================================ -->
+    
+    <!-- alumno tiene dos hijos: nombre y grupo
+         nombre es texto libre, grupo usa tipoGrupo -->
+    <xs:complexType name="tipoAlumno">
+        <xs:sequence>
+            <xs:element name="nombre" type="xs:string"/>
+            <xs:element name="grupo"  type="tipoGrupo"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <!-- tribunal contiene entre 1 y 3 miembros
+         la cardinalidad va en el miembro, no en el tribunal -->
+    <xs:complexType name="tipoTribunal">
+        <xs:sequence>
+            <xs:element name="miembro" type="xs:string"
+                        minOccurs="1" maxOccurs="3"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <!-- proyecto es el elemento principal con todos sus hijos
+         id_proyecto va como atributo porque el enunciado lo pide así -->
+    <xs:complexType name="tipoProyecto">
+        <xs:sequence>
+            <xs:element name="titulo"         type="xs:string"/>
+            <xs:element name="alumno"         type="tipoAlumno"/>
+            <xs:element name="tutor"          type="xs:string"/>
+            <xs:element name="nota_final"     type="tipoNota"/>
+            <xs:element name="fecha_defensa"  type="xs:date"/>
+            <!-- tribunal es opcional: puede aparecer 0 o 1 vez -->
+            <xs:element name="tribunal"       type="tipoTribunal"
+                        minOccurs="0" maxOccurs="1"/>
+        </xs:sequence>
+        <!-- id_proyecto es atributo obligatorio con el patrón tipoId -->
+        <xs:attribute name="id_proyecto" type="tipoId" use="required"/>
+    </xs:complexType>
+    
+    <!-- proyectos es el contenedor raíz que tiene varios proyecto dentro -->
+    <xs:complexType name="tipoProyectos">
+        <xs:sequence>
+            <!-- puede haber 1 o más proyectos -->
+            <xs:element name="proyecto" type="tipoProyecto"
+                        minOccurs="1" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    
+    <!-- ============================================
+         ELEMENTO RAÍZ
+         Siempre al final, conecta el nombre con su tipo
+         ============================================ -->
+    <xs:element name="proyectos" type="tipoProyectos"/>
+    
+</xs:schema>

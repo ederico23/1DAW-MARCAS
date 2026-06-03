@@ -1,0 +1,18 @@
+<!ELEMENT alumno (nombre, apellido, edad, descripcion?)> 
+<!-- ELEMENT PARA DECLARAR SUS HIJOS -->
+<!-- EL ALUMNO TIENE LOS SIGUIENTES HIJOS: nombre, apellido, edad y descripcion? (el ? significa que es opcional)-->
+
+<!ATTLIST alumno
+    dni ID #REQUIRED
+    curso (DAW1|DAW2|DAM1) #REQUIRED
+>
+<!-- ATTLIST PARA DECLARAR LOS ATRIBUTOS DEL ALUMNO (LO QE VA DENTRO DE LA ETIQUETA ALUMNO (DNIS, IDS...)-->
+
+<!ELEMENT nombre (#PCDATA)>
+<!-- EL HIJO NOMBRE SOLO RECIBE TEXTO-->
+<!ELEMENT apellido (#PCDATA)>
+<!-- EL HIJO APELLIDO SOLO RECIBE TEXTO-->
+<!ELEMENT edad (#PCDATA)>
+<!-- EL HIJO EDAD SOLO RECIBE TEXTO-->
+<!ELEMENT descripcion (#PCDATA)>
+<!-- EL HIJO DESCRIPCION SOLO RECIBE TEXTO-->

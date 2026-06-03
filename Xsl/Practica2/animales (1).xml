@@ -1,0 +1,213 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="animales.xsl"?>
+<zoo>
+    <animales>
+        <animal id="1256m" nombre="Pablito" id_cuidador="C01">
+            <tipo>terrestre</tipo>
+            <especie>mono</especie>
+            <subespecie>macaco</subespecie>
+            <crias><id_cria>1257t</id_cria></crias>
+            <fecha_nac><dia>15</dia><mes>2</mes><anno>1976</anno></fecha_nac>
+            <descubridor nombre="Charles Darwin"/>
+            <imagen formato="PNG">mono_pablito</imagen>
+        </animal>
+        <animal id="2233t" nombre="Kira" id_cuidador="C01">
+            <tipo>terrestre</tipo>
+            <especie>tigre</especie>
+            <subespecie>bengala</subespecie>
+            <crias/>
+            <fecha_nac><dia>10</dia><mes>5</mes><anno>2018</anno></fecha_nac>
+            <descubridor nombre="Felix Rodriguez Delafuente"/>
+            <imagen formato="JPG">tigre_kira</imagen>
+        </animal>
+        <animal id="4455e" nombre="Dumbo" id_cuidador="C01">
+            <tipo>terrestre</tipo>
+            <especie>elefante</especie>
+            <subespecie>africano</subespecie>
+            <crias><id_cria>4456e</id_cria><id_cria>4457e</id_cria></crias>
+            <fecha_nac><dia>22</dia><mes>11</mes><anno>1995</anno></fecha_nac>
+            <descubridor nombre="Charles Darwin"/>
+            <imagen formato="PNG">elefante_dumbo</imagen>
+        </animal>
+        <animal id="6677l" nombre="Simba" id_cuidador="C01">
+            <tipo>terrestre</tipo>
+            <especie>leon</especie>
+            <subespecie>atlas</subespecie>
+            <crias/>
+            <fecha_nac><dia>01</dia><mes>8</mes><anno>2012</anno></fecha_nac>
+            <descubridor nombre="Felix Rodriguez Delafuente"/>
+            <imagen formato="JPG">leon_simba</imagen>
+        </animal>
+
+        <animal id="8549a" nombre="Mike" id_cuidador="C02">
+            <tipo>ave</tipo>
+            <especie>aguila</especie>
+            <subespecie>imperial</subespecie>
+            <crias/>
+            <fecha_nac><dia>02</dia><mes>5</mes><anno>2003</anno></fecha_nac>
+            <descubridor nombre="Felix Rodriguez Delafuente"/>
+            <imagen formato="JPG">aguila_mike</imagen>
+        </animal>
+        <animal id="1122p" nombre="Pico" id_cuidador="C02">
+            <tipo>ave</tipo>
+            <especie>tucan</especie>
+            <subespecie>toco</subespecie>
+            <crias><id_cria>1123p</id_cria></crias>
+            <fecha_nac><dia>14</dia><mes>3</mes><anno>2019</anno></fecha_nac>
+            <descubridor nombre="Charles Darwin"/>
+            <imagen formato="PNG">tucan_pico</imagen>
+        </animal>
+        <animal id="3344h" nombre="Hedwig" id_cuidador="C02">
+            <tipo>ave</tipo>
+            <especie>buho</especie>
+            <subespecie>nival</subespecie>
+            <crias/>
+            <fecha_nac><dia>12</dia><mes>12</mes><anno>2010</anno></fecha_nac>
+            <descubridor nombre="Felix Rodriguez Delafuente"/>
+            <imagen formato="TIFF">buho_hedwig</imagen>
+        </animal>
+        <animal id="5566f" nombre="Flamy" id_cuidador="C02">
+            <tipo>ave</tipo>
+            <especie>flamenco</especie>
+            <subespecie>rosado</subespecie>
+            <crias/>
+            <fecha_nac><dia>30</dia><mes>6</mes><anno>2015</anno></fecha_nac>
+            <descubridor nombre="Charles Darwin"/>
+            <imagen formato="JPG">flamenco_flamy</imagen>
+        </animal>
+
+        <animal id="3344s" nombre="Shira" id_cuidador="C03">
+            <tipo>marino</tipo>
+            <especie>tiburon</especie>
+            <subespecie>blanco</subespecie>
+            <crias><id_cria>3345s</id_cria></crias>
+            <fecha_nac><dia>10</dia><mes>12</mes><anno>2015</anno></fecha_nac>
+            <descubridor nombre="Jacques Custeau"/>
+            <imagen formato="TIFF">tiburon_shira</imagen>
+        </animal>
+        <animal id="7788d" nombre="Flipper" id_cuidador="C03">
+            <tipo>marino</tipo>
+            <especie>delfin</especie>
+            <subespecie>mular</subespecie>
+            <crias><id_cria>7789d</id_cria><id_cria>7790d</id_cria></crias>
+            <fecha_nac><dia>05</dia><mes>4</mes><anno>2008</anno></fecha_nac>
+            <descubridor nombre="Jacques Custeau"/>
+            <imagen formato="PNG">delfin_flipper</imagen>
+        </animal>
+        <animal id="9900o" nombre="Willy" id_cuidador="C03">
+            <tipo>marino</tipo>
+            <especie>orca</especie>
+            <subespecie>comun</subespecie>
+            <crias/>
+            <fecha_nac><dia>18</dia><mes>9</mes><anno>1998</anno></fecha_nac>
+            <descubridor nombre="Jacques Custeau"/>
+            <imagen formato="JPG">orca_willy</imagen>
+        </animal>
+        <animal id="2211t" nombre="Tortu" id_cuidador="C03">
+            <tipo>marino</tipo>
+            <especie>tortuga</especie>
+            <subespecie>carey</subespecie>
+            <crias><id_cria>2212t</id_cria><id_cria>2213t</id_cria><id_cria>2214t</id_cria></crias>
+            <fecha_nac><dia>25</dia><mes>12</mes><anno>1950</anno></fecha_nac>
+            <descubridor nombre="Charles Darwin"/>
+            <imagen formato="TIFF">tortuga_tortu</imagen>
+        </animal>
+
+        <animal id="4433k" nombre="Rango" id_cuidador="C04">
+            <tipo>terrestre</tipo>
+            <especie>camaleon</especie>
+            <subespecie>yemen</subespecie>
+            <crias/>
+            <fecha_nac><dia>07</dia><mes>7</mes><anno>2020</anno></fecha_nac>
+            <descubridor nombre="Charles Darwin"/>
+            <imagen formato="PNG">camaleon_rango</imagen>
+        </animal>
+        <animal id="5544c" nombre="Coco" id_cuidador="C04">
+            <tipo>terrestre</tipo>
+            <especie>cocodrilo</especie>
+            <subespecie>nilo</subespecie>
+            <crias><id_cria>5545c</id_cria></crias>
+            <fecha_nac><dia>14</dia><mes>2</mes><anno>1985</anno></fecha_nac>
+            <descubridor nombre="Jacques Custeau"/>
+            <imagen formato="JPG">cocodrilo_coco</imagen>
+        </animal>
+        <animal id="6655i" nombre="Iggy" id_cuidador="C04">
+            <tipo>terrestre</tipo>
+            <especie>iguana</especie>
+            <subespecie>verde</subespecie>
+            <crias/>
+            <fecha_nac><dia>19</dia><mes>10</mes><anno>2017</anno></fecha_nac>
+            <descubridor nombre="Charles Darwin"/>
+            <imagen formato="PNG">iguana_iggy</imagen>
+        </animal>
+        <animal id="7766s" nombre="Kaa" id_cuidador="C04">
+            <tipo>terrestre</tipo>
+            <especie>serpiente</especie>
+            <subespecie>piton</subespecie>
+            <crias/>
+            <fecha_nac><dia>03</dia><mes>1</mes><anno>2014</anno></fecha_nac>
+            <descubridor nombre="Felix Rodriguez Delafuente"/>
+            <imagen formato="TIFF">piton_kaa</imagen>
+        </animal>
+
+        <animal id="8877g" nombre="Kong" id_cuidador="C05">
+            <tipo>terrestre</tipo>
+            <especie>gorila</especie>
+            <subespecie>montaña</subespecie>
+            <crias/>
+            <fecha_nac><dia>28</dia><mes>4</mes><anno>2005</anno></fecha_nac>
+            <descubridor nombre="Charles Darwin"/>
+            <imagen formato="JPG">gorila_kong</imagen>
+        </animal>
+        <animal id="9988z" nombre="Zipi" id_cuidador="C05">
+            <tipo>terrestre</tipo>
+            <especie>cebra</especie>
+            <subespecie>grevy</subespecie>
+            <crias/>
+            <fecha_nac><dia>11</dia><mes>11</mes><anno>2016</anno></fecha_nac>
+            <descubridor nombre="Felix Rodriguez Delafuente"/>
+            <imagen formato="PNG">cebra_zipi</imagen>
+        </animal>
+        <animal id="1100j" nombre="Melman" id_cuidador="C05">
+            <tipo>terrestre</tipo>
+            <especie>jirafa</especie>
+            <subespecie>reticulada</subespecie>
+            <crias/>
+            <fecha_nac><dia>20</dia><mes>8</mes><anno>2009</anno></fecha_nac>
+            <descubridor nombre="Charles Darwin"/>
+            <imagen formato="JPG">jirafa_melman</imagen>
+        </animal>
+        <animal id="2200p" nombre="Perry" id_cuidador="C05">
+            <tipo>terrestre</tipo>
+            <especie>ornitorrinco</especie>
+            <subespecie>australiano</subespecie>
+            <crias><id_cria>2201p</id_cria></crias>
+            <fecha_nac><dia>01</dia><mes>1</mes><anno>2021</anno></fecha_nac>
+            <descubridor nombre="Charles Darwin"/>
+            <imagen formato="PNG">perry_ornitorrinco</imagen>
+        </animal>
+    </animales>
+
+    <cuidadores>
+        <cuidador id="C01">
+            <nombre>Rosa García</nombre>
+            <especialidad>grandes mamiferos</especialidad>
+        </cuidador>
+        <cuidador id="C02">
+            <nombre>Alberto Pérez</nombre>
+            <especialidad>aves rapaces</especialidad>
+        </cuidador>
+        <cuidador id="C03">
+            <nombre>Mario Marín</nombre>
+            <especialidad>fauna marina</especialidad>
+        </cuidador>
+        <cuidador id="C04">
+            <nombre>Elena Reptil</nombre>
+            <especialidad>herpetologia</especialidad>
+        </cuidador>
+        <cuidador id="C05">
+            <nombre>Carlos Primate</nombre>
+            <especialidad>primates y exoticos</especialidad>
+        </cuidador>
+    </cuidadores>
+</zoo>

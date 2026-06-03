@@ -1,0 +1,19 @@
+<!ELEMENT curso (duracion, profesor, numeroPlazas, descripcion?)>
+<!-- ELEMENT PARA DECLARAR SUS HIJOS -->
+
+<!ATTLIST curso
+    codigo ID #REQUIRED
+    nombre CDATA #REQUIRED
+    modalidad (presencial|online|mixta) #REQUIRED
+    estado (abierto|cerrado) #REQUIRED
+>
+<!-- ATTLIST PARA LOS ATRIBUTOS -->
+
+<!ELEMENT duracion (#PCDATA)>
+<!-- EL HIJO DURACION SOLO RECIBE TEXTO-->
+<!ELEMENT profesor (#PCDATA)>
+<!-- EL HIJO PROFESOR SOLO RECIBE TEXTO-->
+<!ELEMENT numeroPlazas (#PCDATA)>
+<!-- EL HIJO NUMEROPLAZAS SOLO RECIBE TEXTO-->
+<!ELEMENT descripcion (#PCDATA)>
+<!-- EL HIJO DESCRIPCION SOLO RECIBE TEXTO-->

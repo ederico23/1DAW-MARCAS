@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<proyectos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:noNamespaceSchemaLocation="proyectos.xsd">
+    
+    <proyecto id_proyecto="PRJ-2026-001">
+        <titulo>Aplicación web de gestión de tareas</titulo>
+        <alumno>
+            <nombre>Juan García</nombre>
+            <grupo>DAW2</grupo>
+        </alumno>
+        <tutor>María López</tutor>
+        <nota_final>8.5</nota_final>
+        <fecha_defensa>2026-06-15</fecha_defensa>
+        <tribunal>
+            <miembro>Carlos Pérez</miembro>
+            <miembro>Ana Martínez</miembro>
+        </tribunal>
+    </proyecto>
+    
+    <proyecto id_proyecto="PRJ-2026-002">
+        <titulo>Sistema de inventario con base de datos</titulo>
+        <alumno>
+            <nombre>Laura Sánchez</nombre>
+            <grupo>DAM2</grupo>
+        </alumno>
+        <tutor>Roberto Fernández</tutor>
+        <nota_final>9.0</nota_final>
+        <fecha_defensa>2026-06-16</fecha_defensa>
+        <!-- este proyecto no tiene tribunal, es opcional -->
+    </proyecto>
+    
+</proyectos>

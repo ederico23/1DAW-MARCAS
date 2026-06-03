@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    
+    <!-- Tipo simple: curso solo puede ser uno de estos tres valores -->
+    <xs:simpleType name="tipoCurso"> <!-- no se como se conecta con el atributo curso -->
+        <xs:restriction base="xs:string"> <!-- tiene que ser un string-->
+            <xs:enumeration value="DAW1"/> <!-- tiene que ser uno de estos tres valores -->
+            <xs:enumeration value="DAW2"/>
+            <xs:enumeration value="DAM1"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <!-- Tipo complejo: alumno tiene hijos Y atributos -->
+    <xs:complexType name="tipoAlumno"> <!-- no se como con el alumno-->
+        <xs:sequence> <!-- supongo que marca el orden de los elementos -->
+            <xs:element name="nombre"      type="xs:string"/> <!-- el nombre solo recibe texto -->
+            <xs:element name="apellido"    type="xs:string"/>
+            <xs:element name="edad"        type="xs:integer"/>
+            <xs:element name="descripcion" type="xs:string"
+                        minOccurs="0" maxOccurs="1"/> <!-- descripcion string y minimo tiene que ser 0 veces y maximo 1 vez -->
+        </xs:sequence>
+        <xs:attribute name="dni"   type="xs:string"  use="required"/> <!-- el dni es un string y es obligatorio -->
+        <xs:attribute name="curso" type="tipoCurso"  use="required"/>  <!-- el curso es del tipo tipoCurso y es obligatorio -->
+    </xs:complexType>
+    
+    <!-- Elemento raíz -->
+    <xs:element name="alumno" type="tipoAlumno"/>
+    
+</xs:schema>

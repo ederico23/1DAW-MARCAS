@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE curso SYSTEM "cursosDAW.dtd">
+
+<curso codigo = "CURSO1" nombre = "DAW" modalidad = "presencial" estado="abierto">
+    
+    <duracion>5</duracion>
+    
+    <profesor>
+    </profesor>
+    
+    <numeroPlazas>120</numeroPlazas>
+    
+    <descripcion></descripcion>
+    
+</curso>    

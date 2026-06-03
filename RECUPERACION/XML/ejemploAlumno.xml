@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- <!DOCTYPE alumno SYSTEM "ejemploAlumno.dtd"> -->
+
+<alumno dni="12345678A" curso="DAW1">
+    <nombre>Juan</nombre>
+    <apellido>García</apellido>
+    <edad>20</edad>
+    <descripcion>Muy buen estudiante</descripcion>
+</alumno>

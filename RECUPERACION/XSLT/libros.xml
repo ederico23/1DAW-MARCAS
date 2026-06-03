@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="libros.xsl" type="text/xsl"?>
+<tienda>
+    <libro genero="terror">
+        <titulo>It</titulo>
+        <autor>Stephen King</autor>
+        <precio>15</precio>
+    </libro>
+    <libro genero="fantasia">
+        <titulo>El Hobbit</titulo>
+        <autor>Tolkien</autor>
+        <precio>12</precio>
+    </libro>
+    <libro genero="terror">
+        <titulo>El Resplandor</titulo>
+        <autor>Stephen King</autor>
+        <precio>120</precio>
+    </libro>
+</tienda>
