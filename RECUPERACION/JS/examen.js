@@ -15,7 +15,7 @@ function addInscription() {
     }
 
     const cuerpo = document.querySelector('#cuerpo-tabla'); //tabla
-
+    
     const fila = document.createElement('tr');//creamos una fila
 
     // Celda número

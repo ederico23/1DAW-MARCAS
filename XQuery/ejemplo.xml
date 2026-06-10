@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+    <biblioteca>
+        
+        <libro categoria="web">
+        
+            <titulo lang="es">Lenguajes de Marcas</titulo>
+            <autor>Juan Pérez</autor>
+            <precio>29.95</precio>
+        
+        </libro>
+
+        <libro categoria="cocina">
+
+            <titulo lang="it">Pasta Brava</titulo>
+            <autor>Luigi Rossi</autor>
+            <precio>15.00</precio>
+            </libro>
+    
+    </biblioteca>
