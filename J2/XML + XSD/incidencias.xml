@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<incidencias xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:noNamespaceSchemaLocation="incidencias.xsd">
+    
+    <incidencia id="INC-2026-001">
+        <descripcion>Fallo en el sistema</descripcion>
+        
+        <prioridad>Baja</prioridad>
+        
+        <nivel_impacto>3</nivel_impacto>
+        
+        <tecnico>
+            <nombre>Juan</nombre>
+        </tecnico>
+    </incidencia>
+    
+</incidencias>
