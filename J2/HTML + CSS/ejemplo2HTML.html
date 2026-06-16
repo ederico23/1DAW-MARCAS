@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--tipo de caracteres -->
+    <meta charset="UTF-8">
+    
+    <!--por defecto con html:5-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- autor de la pagina -->
+    <meta name="author" content="Eder Gracia" />
+    
+    <!-- descripcion q usan los buscadores-->
+    <meta name="description" content="Tienda retro de videojuegos RetroGame" />
+    
+    <!-- palabras clave q usan los buscadores-->
+    <meta name="keywords" content="videojuegos, retro, consolas" />
+    
+    <!-- lo que aparece como nnombre de la pestaña-->
+    <title>RetroGame - Registro</title>
+    
+    <!-- favincon, imagen en la pestaña-->
+    <link rel="icon" href="favicon.ico">
+    
+    <!--unir el html con el css-->
+    <link rel="stylesheet" href="ejemploCSS.css">
+</head>
+<body>
+    <!--form: contenedor del formulario
+    action: a donde envia los datos(ahora a ningun sitio)
+    method: como envia los datos, en este caso, datos ocultos en la peticion-->
+    <form action="#" method="post">
+
+        <!--label for="id" asociada al id input que pertenece , al hacer clic cobre input se activa-->
+        <label for="nombre">Nombre:</label>
+
+        <!--required, campo obligario-->
+        <input type="text" id="nombre" name="nombre" required>
+
+
+        <label for="email">Email:</label>
+        <input type="text" name="email" id="email" required>
+
+        <label for="password">Contraseña:</label>
+        <!--type password para que este oculta-->
+        <input type="password" name="password" id="password">
+
+        <label for="fecha">Fecha de nacimiento</label>
+        <input type="date" name="fecha" id="fecha">
+
+        <label for="consola">Consola:</label>
+        <select name="consola" id="consola">
+            <option value="nes">NES</option>
+            <option value="ps2">SNES</option>
+            <option value="gameboy">GameBoy</option>
+            <option value="megadrive">Mega Drive</option>
+        </select>
+
+        <!--fieldset agrupa campos relacionados visualmente-->
+        <fieldset>
+            <!--titulo del grupo-->
+            <legend>Sexo:</legend>
+            
+            <!--type radio; solo se puede elegir 1 del mismo name-->
+            <input type="radio" name="sexo" id="hombre" value="hombre">
+            <label for="hombre">hombre</label>
+
+            <input type="radio" name="sexo" id="mujer" value="mujer">
+            <label for="mujer">mujer</label>
+        </fieldset>
+
+        <!--type checkbox = casilla de marcar-->
+        <input type="checkbox" name="boletin" id="boletin">
+        <label for="boletin">Suscribirse para recibir boletin</label>
+
+        <!--type submit = enviar formulario-->
+        <button type="submit">Enviar</button>
+
+        <button type="reset">Borrar</button>
+    </form>
+
+</body>
+</html>

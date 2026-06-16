@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UNICODE">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Eder Gracia">
+    <meta name="description" content="Pagina web de videojuegos retro">
+    <meta name="keywords" content="retro, nes, gameboy, videojuegos">
+    <title>RetroGame - Resgistro</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+    <form action="#" method="post">
+        <label for="nombre">Nombre</label>
+        <input type="text" name="nombre" id="nombre" required>
+    
+        <label for="email">Email</label>
+        <input type="text" name="email" id="email" required>
+
+        <label for="contraseña">Contraseña</label>
+        <input type="password" name="contraseña" id="contraseña">
+
+        <label for="fecha">Fecha</label>
+        <input type="date" name="fecha" id="fecha">
+
+        <label for="consola">Consola favorita</label>
+        <input type="text" name="consola" id="consola">
+            <select name="consola" id="consola">
+                <option value="nes">NES</option>
+                <option value="gameboy">GameBoy</option>
+                <option value="ps2">PS2</option>
+                <option value="ps1">ps1</option>
+            </select>
+
+        <fieldset>
+
+            <legend>Sexo</legend>
+
+            <label for="hombre">hombre</label>
+            <input type="radio" name="hombre" id="hombre" value="hombre">
+
+            <label for="mujer">mujer</label>
+            <input type="radio" name="mujer" id="mujer" value="mujer">
+
+        </fieldset>
+
+        <label for="Suscribirse">Suscribirse al boletin</label>
+        <input type="checkbox" name="Suscribirse" id="Suscribirse">
+
+        <button type="submit">Enviar</button>
+        <button type="reset">Borrar</button>
+    </form>
+
+</body>
+
+</html>

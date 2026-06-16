@@ -1,0 +1,63 @@
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Catálogo Musical</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f9f9f9;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 80%;
+            margin-bottom: 30px;
+            background-color: white;
+        }
+
+        th,
+        td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #333;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Plataforma Musical - Catálogo Completo</h1>
+    <!-- Ejercicio 1.1: Mostrar el total de artistas registrados -->
+    <p>
+        <strong>Total de artistas registrados: </strong>
+        <xsl:value-of select="count(artistas/artista)" />
+    </p>
+
+    <!-- Ejercicio 1.2: Mostrar tabla con artistas -->
+    <h2>Artistas</h2>
+    <table>
+
+    </table>
+
+    <!-- Ejercicio 2: Mostrar tabla con álbumes -->
+    <h2>Álbumes</h2>
+    <table>
+
+    </table>
+
+    <!-- Ejercicio 3: Mostrar tabla con usuarios -->
+    <h2>Usuarios</h2>
+    <table>
+
+    </table>
+</body>
+</body>
+
+</html>

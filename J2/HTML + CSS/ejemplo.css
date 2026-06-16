@@ -1,0 +1,87 @@
+/*
+selector {
+    propiedad: valor
+}
+
+selector = a lo que va a afectar
+propiedad =  que cambia
+valor = a que lo cambia
+*/
+
+/*
+selector de tipo ETIQUETA, afecta a TODOS los elementos de ese tipo, TODOS los p seran blancos
+ p {
+    color: white
+}
+
+selector de clase, afecta a los que tienen class="precio" y se escribe con UN . DELANTE
+.precio{
+    color: #00ff00;
+}
+
+selector de ID, afecta al que tiene id="header" y se escribe con # DELANTE, solo SE USA 1VEZ
+#header {
+    background-color: #0a0a0a;
+}
+
+*/
+
+
+/*
+
+┌─────────────────────────────┐
+│         MARGIN              │  ← espacio fuera del elemento
+│   ┌─────────────────────┐   │
+│   │      BORDER         │   │  ← borde visible
+│   │  ┌───────────────┐  │   │
+│   │  │    PADDING    │  │   │  ← espacio interior
+│   │  │  ┌─────────┐  │  │   │
+│   │  │  │ CONTENT │  │  │   │  ← el contenido real
+│   │  │  └─────────┘  │  │   │
+│   │  └───────────────┘  │   │
+│   └─────────────────────┘   │
+└─────────────────────────────┘
+
+*/
+
+
+div {
+    margin: 20px; /*espacio FUERA - aleja el elemento de sus vecinos*/
+    padding: 20px; /*espacio DENTRO - aleja el contenido del borde*/
+    border: 3px solid red; /*borde visible  d color rojo */
+}
+
+/*margin y padding puedes espicificar tambien arriba/abajo o arriba/derecha/abjo/izq (como un reloj)*/
+
+
+/*
+    propiedades mas usadas
+
+    PARA TEXTO
+    color: #ffffff;  <------------------------ COLOR DEL TEXTO
+    font-family: "Courier New", monospace; <------ FUENTE
+    font-size: 16px; <-------------------------TAMAÑO
+    text-decoration: none; <-------------------QUITA SUBRAYADO A LOS ENLACES
+
+
+    PARA FONDO
+    background-color: #0a0a0a;
+
+
+    PARA TAMAÑO
+    width: 100%;
+    max-width: 500px;
+    height: 100px;
+
+    PARA BORDE
+    border: 3px solid #0a0a0a;
+    border-bottom: 3px solid #0a0a0a;
+    border-radius: 8px;
+    
+    PARA SOMBRA
+    box-shadow: 0 0 10px #0a0a0a;
+
+    PARA CURSOR
+    cursor: pointer;
+
+*/

@@ -1,0 +1,256 @@
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-stylesheet href="plataforma_musical.xslt" type="text/xslt"?>
+<streaming>
+    <artistas>
+        <artista id="ART001" nombre="Neon Pulse" pais_origen="Japón">
+            <genero_musical>Synthwave</genero_musical>
+            <fecha_debut>2018-03-15</fecha_debut>
+            <numero_albumes>3</numero_albumes>
+        </artista>
+        <artista id="ART002" nombre="Solar Echo" pais_origen="Canadá">
+            <genero_musical>Ambient</genero_musical>
+            <fecha_debut>2015-07-22</fecha_debut>
+            <numero_albumes>4</numero_albumes>
+        </artista>
+        <artista id="ART003" nombre="Digital Frontier" pais_origen="Alemania">
+            <genero_musical>Techno</genero_musical>
+            <fecha_debut>2012-11-30</fecha_debut>
+            <numero_albumes>5</numero_albumes>
+        </artista>
+        <artista id="ART004" nombre="Luna Moth" pais_origen="Australia">
+            <genero_musical>Dream Pop</genero_musical>
+            <fecha_debut>2019-01-10</fecha_debut>
+            <numero_albumes>2</numero_albumes>
+        </artista>
+        <artista id="ART005" nombre="Quantum Drift" pais_origen="Estados Unidos">
+            <genero_musical>Electronic</genero_musical>
+            <fecha_debut>2016-09-05</fecha_debut>
+            <numero_albumes>3</numero_albumes>
+        </artista>
+        <artista id="ART006" nombre="Velvet Horizon" pais_origen="Francia">
+            <genero_musical>Indie Pop</genero_musical>
+            <fecha_debut>2020-05-18</fecha_debut>
+            <numero_albumes>2</numero_albumes>
+        </artista>
+        <artista id="ART007" nombre="Cosmic Drifters" pais_origen="Reino Unido">
+            <genero_musical>Space Rock</genero_musical>
+            <fecha_debut>2017-11-03</fecha_debut>
+            <numero_albumes>2</numero_albumes>
+        </artista>
+    </artistas>
+    <albumes>
+        <album id="ALB001" titulo="Midnight Drive" id_artista="ART001">
+            <anio_lanzamiento>2018</anio_lanzamiento>
+            <genero>Synthwave</genero>
+            <numero_canciones>10</numero_canciones>
+        </album>
+        <album id="ALB002" titulo="Neon Dreams" id_artista="ART001">
+            <anio_lanzamiento>2020</anio_lanzamiento>
+            <genero>Synthwave</genero>
+            <numero_canciones>12</numero_canciones>
+        </album>
+        <album id="ALB003" titulo="Echoes of Tomorrow" id_artista="ART002">
+            <anio_lanzamiento>2015</anio_lanzamiento>
+            <genero>Ambient</genero>
+            <numero_canciones>8</numero_canciones>
+        </album>
+        <album id="ALB004" titulo="Circuit Breaker" id_artista="ART003">
+            <anio_lanzamiento>2012</anio_lanzamiento>
+            <genero>Techno</genero>
+            <numero_canciones>14</numero_canciones>
+        </album>
+        <album id="ALB005" titulo="Moonlit Whispers" id_artista="ART004">
+            <anio_lanzamiento>2019</anio_lanzamiento>
+            <genero>Dream Pop</genero>
+            <numero_canciones>9</numero_canciones>
+        </album>
+        <album id="ALB006" titulo="Particle Storm" id_artista="ART005">
+            <anio_lanzamiento>2016</anio_lanzamiento>
+            <genero>Electronic</genero>
+            <numero_canciones>11</numero_canciones>
+        </album>
+        <album id="ALB007" titulo="Starlight Serenade" id_artista="ART006">
+            <anio_lanzamiento>2020</anio_lanzamiento>
+            <genero>Indie Pop</genero>
+            <numero_canciones>10</numero_canciones>
+        </album>
+        <album id="ALB008" titulo="Neon Nights" id_artista="ART006">
+            <anio_lanzamiento>2022</anio_lanzamiento>
+            <genero>Indie Pop</genero>
+            <numero_canciones>12</numero_canciones>
+        </album>
+        <album id="ALB009" titulo="Galaxy Hymns" id_artista="ART007">
+            <anio_lanzamiento>2017</anio_lanzamiento>
+            <genero>Space Rock</genero>
+            <numero_canciones>8</numero_canciones>
+        </album>
+        <album id="ALB010" titulo="Stellar Winds" id_artista="ART007">
+            <anio_lanzamiento>2020</anio_lanzamiento>
+            <genero>Space Rock</genero>
+            <numero_canciones>10</numero_canciones>
+        </album>
+    </albumes>
+    <canciones>
+        <cancion id="CAN001" titulo="Neon Lights" id_album="ALB001">
+            <duracion>3:45</duracion>
+            <compositor>Yuki Tanaka</compositor>
+            <productor>Hiroshi Sato</productor>
+        </cancion>
+        <cancion id="CAN002" titulo="Cityscape" id_album="ALB001">
+            <duracion>4:20</duracion>
+            <compositor>Yuki Tanaka</compositor>
+            <productor>Kenji Watanabe</productor>
+        </cancion>
+        <cancion id="CAN003" titulo="Digital Horizon" id_album="ALB002">
+            <duracion>5:10</duracion>
+            <compositor>Yuki Tanaka</compositor>
+            <productor>Hiroshi Sato</productor>
+        </cancion>
+        <cancion id="CAN004" titulo="Floating Clouds" id_album="ALB003">
+            <duracion>6:30</duracion>
+            <compositor>Elena Rivers</compositor>
+            <productor>Marcus Bell</productor>
+        </cancion>
+        <cancion id="CAN005" titulo="Voltage Drop" id_album="ALB004">
+            <duracion>4:45</duracion>
+            <compositor>Klaus Schneider</compositor>
+            <productor>Thomas Weber</productor>
+        </cancion>
+        <cancion id="CAN006" titulo="Silver Moon" id_album="ALB005">
+            <duracion>3:55</duracion>
+            <compositor>Sophie Clarke</compositor>
+            <productor>James Wright</productor>
+        </cancion>
+        <cancion id="CAN007" titulo="Quantum Leap" id_album="ALB006">
+            <duracion>4:15</duracion>
+            <compositor>Alex Morgan</compositor>
+            <productor>Ryan Cooper</productor>
+        </cancion>
+        <cancion id="CAN008" titulo="Starlight Melody" id_album="ALB007">
+            <duracion>4:15</duracion>
+            <compositor>Marie Dubois</compositor>
+            <productor>Antoine Laurent</productor>
+        </cancion>
+        <cancion id="CAN009" titulo="Velvet Skies" id_album="ALB007">
+            <duracion>3:50</duracion>
+            <compositor>Marie Dubois</compositor>
+            <productor>Pierre Moreau</productor>
+        </cancion>
+        <cancion id="CAN010" titulo="Midnight Confessions" id_album="ALB007">
+            <duracion>5:20</duracion>
+            <compositor>Jean-Luc Petit</compositor>
+            <productor>Antoine Laurent</productor>
+        </cancion>
+        <cancion id="CAN011" titulo="Paris Lights" id_album="ALB007">
+            <duracion>4:05</duracion>
+            <compositor>Marie Dubois</compositor>
+            <productor>Sophie Martin</productor>
+        </cancion>
+        <cancion id="CAN012" titulo="Heartbeat City" id_album="ALB007">
+            <duracion>3:45</duracion>
+            <compositor>Jean-Luc Petit</compositor>
+            <productor>Pierre Moreau</productor>
+        </cancion>
+        <cancion id="CAN013" titulo="Neon Glow" id_album="ALB008">
+            <duracion>4:30</duracion>
+            <compositor>Marie Dubois</compositor>
+            <productor>Antoine Laurent</productor>
+        </cancion>
+        <cancion id="CAN014" titulo="Electric Dreams" id_album="ALB008">
+            <duracion>3:55</duracion>
+            <compositor>Jean-Luc Petit</compositor>
+            <productor>Sophie Martin</productor>
+        </cancion>
+        <cancion id="CAN015" titulo="Digital Love" id_album="ALB008">
+            <duracion>4:25</duracion>
+            <compositor>Marie Dubois</compositor>
+            <productor>Pierre Moreau</productor>
+        </cancion>
+        <cancion id="CAN016" titulo="Night Drive" id_album="ALB008">
+            <duracion>5:10</duracion>
+            <compositor>Jean-Luc Petit</compositor>
+            <productor>Antoine Laurent</productor>
+        </cancion>
+        <cancion id="CAN017" titulo="Sunset Boulevard" id_album="ALB008">
+            <duracion>4:00</duracion>
+            <compositor>Marie Dubois</compositor>
+            <productor>Sophie Martin</productor>
+        </cancion>
+        <cancion id="CAN018" titulo="Celestial Choir" id_album="ALB009">
+            <duracion>6:15</duracion>
+            <compositor>Robert Smith</compositor>
+            <productor>David Bowie</productor>
+        </cancion>
+        <cancion id="CAN019" titulo="Orbital Dance" id_album="ALB009">
+            <duracion>5:30</duracion>
+            <compositor>John Lennon</compositor>
+            <productor>David Bowie</productor>
+        </cancion>
+        <cancion id="CAN020" titulo="Cosmic Dust" id_album="ALB009">
+            <duracion>7:20</duracion>
+            <compositor>Robert Smith</compositor>
+            <productor>George Harrison</productor>
+        </cancion>
+        <cancion id="CAN021" titulo="Nebula Waves" id_album="ALB009">
+            <duracion>4:45</duracion>
+            <compositor>John Lennon</compositor>
+            <productor>David Bowie</productor>
+        </cancion>
+        <cancion id="CAN022" titulo="Stardust Memories" id_album="ALB009">
+            <duracion>5:50</duracion>
+            <compositor>Robert Smith</compositor>
+            <productor>George Harrison</productor>
+        </cancion>
+        <cancion id="CAN023" titulo="Solar Flare" id_album="ALB010">
+            <duracion>4:55</duracion>
+            <compositor>John Lennon</compositor>
+            <productor>George Harrison</productor>
+        </cancion>
+        <cancion id="CAN024" titulo="Interstellar" id_album="ALB010">
+            <duracion>6:40</duracion>
+            <compositor>Robert Smith</compositor>
+            <productor>David Bowie</productor>
+        </cancion>
+        <cancion id="CAN025" titulo="Black Hole Sun" id_album="ALB010">
+            <duracion>5:15</duracion>
+            <compositor>John Lennon</compositor>
+            <productor>George Harrison</productor>
+        </cancion>
+        <cancion id="CAN026" titulo="Milky Way" id_album="ALB010">
+            <duracion>4:35</duracion>
+            <compositor>Robert Smith</compositor>
+            <productor>David Bowie</productor>
+        </cancion>
+        <cancion id="CAN027" titulo="Asteroid Belt" id_album="ALB010">
+            <duracion>3:50</duracion>
+            <compositor>John Lennon</compositor>
+            <productor>George Harrison</productor>
+        </cancion>
+    </canciones>
+    <usuarios>
+        <usuario id="USR001" nombre="Carlos Mendoza">
+            <email>carlos.m@example.com</email>
+            <plan>Premium</plan>
+            <generos_favoritos>
+                <genero>Synthwave</genero>
+                <genero>Electronic</genero>
+            </generos_favoritos>
+            <lista_reproduccion>
+                <cancion_id>CAN001</cancion_id>
+                <cancion_id>CAN003</cancion_id>
+            </lista_reproduccion>
+        </usuario>
+        <usuario id="USR002" nombre="Ana López">
+            <email>ana.l@example.com</email>
+            <plan>Free</plan>
+            <generos_favoritos>
+                <genero>Ambient</genero>
+                <genero>Dream Pop</genero>
+            </generos_favoritos>
+            <lista_reproduccion>
+                <cancion_id>CAN004</cancion_id>
+                <cancion_id>CAN006</cancion_id>
+            </lista_reproduccion>
+        </usuario>
+    </usuarios>
+</streaming>

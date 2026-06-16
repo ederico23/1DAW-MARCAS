@@ -1,0 +1,152 @@
+<!DOCTYPE html> <!-- significa q es un html5-->
+<html lang="es"> <!--indica el lenguaje q se utilizara-->
+<head> <!-- no se ve en la web, son cosas internas-->
+
+    <!--tipo de caracteres -->
+    <meta charset="UTF-8"> 
+
+    <!--por defecto con html:5-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- autor de la pagina -->
+    <meta name="author" content="Eder Gracia"/>
+
+    <!-- descripcion q usan los buscadores-->
+    <meta name="description" content="Tienda retro de videojuegos RetroGame"/>
+
+    <!-- palabras clave q usan los buscadores-->
+    <meta name="keywords" content="videojuegos, retro, consolas"/>
+
+    <!-- lo que aparece como nnombre de la pestaña-->
+    <title>RetroGame - Inicio</title>
+
+    <!-- favincon, imagen en la pestaña-->
+    <link rel="icon" href="favicon.ico">
+
+    <!--unir el html con el css-->
+    <link rel="stylesheet" href="ejemploCSS.css">
+</head>
+<body>
+    
+    <!--encabezado de la pagina-->
+    <header>
+        <!--imagen del logo, el alt sirve para leer la imagen-->
+        <img src="favicon.ico" alt="Logo de RetroGame">
+
+        <!--titulo principal-->
+        <h1>RetroGame</h1>
+    </header>
+
+    <!--barra de navegacion, enlaces entre paginas-->
+    <nav>
+        <!-- el href indica el enlace a la pagina dnd te va a redirigir-->
+        <a href="ejemploHTML.html">Inicio</a>
+        <a href="ejemplo2HTML.html">Registro</a>
+    </nav>
+
+    <!--contenido principal de la pagina-->
+    <main>
+        <!-- aqui va lo especifico de cada pagina-->
+
+        <!--section agrupa contenido relacionado tematicamente-->
+        <section>
+            <h2>Productos destacados</h2>
+
+            <!--blque de contenido independiente-->
+            <article>
+                
+                <!--imagen del prducto-->
+                <img src="https://placehold.co/300x200/1a1a1a/00ff00?text=NES+Console" alt="NES console">
+
+                <h3>NES Console</h3>
+                <p class="precio">49,99€</p>
+                <p>La consola clásica de Nintendo que lo inició todo</p>
+                
+                <button>Añadir al carrito</button>
+            </article>
+
+            <!--segundo articulo-->
+            <article>
+
+                <img src="https://placehold.co/300x200/1a1a1a/00ff00?text=Gameboy" alt="GameBoy">
+                <h3>GameBoy</h3>
+                <p class="precio">39,99</p>
+                <p>La consola mas portatil de todos los tiempos</p>
+                <button>Añadir al carrito</button>
+            </article>
+
+        </section>
+
+        <h2>Top ventas de consolas historicas</h2>
+
+        <table>
+            <!--cabecera de la tabla, los titulos-->
+            <thead>
+                <tr>
+                    <th>Posicion</th>
+                    <th>Consola</th>
+                    <th>Año</th>
+                    <th>Unidades vendidas</th>
+                </tr>
+            </thead>
+
+            <!--para el cuerpo de la tabla-->
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Ps2</td>
+                    <td>2000</td>
+                    <td>155M</td>
+                </tr>
+
+                <tr>
+                    <td>2</td>
+                    <td>Nintendo DS</td>
+                    <td>2004</td>
+                    <td>154 millones</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Game Boy</td>
+                    <td>1989</td>
+                    <td>118 millones</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>PlayStation 4</td>
+                    <td>2013</td>
+                    <td>117 millones</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- iframe incrusta contenido externo dentro de tu página -->
+        <!-- El enlace de YouTube hay que convertirlo:
+             youtu.be/6nv9ycdzSMg  →  youtube.com/embed/6nv9ycdzSMg -->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/6nv9ycdzSMg" allowfullscreen></iframe>
+
+    </main>
+
+    <!--pie de pagina-->
+    <footer>
+
+        <!--lista sin enumaracion-->
+        <ul>
+            <li>FAQ</li>
+            <li>Contacto</li>
+            <li>Politicas</li>
+        </ul>
+
+        <!--lista de redes con enlaces-->
+        <ul>
+            <li><a href="instagram.com">Instagram</a></li>
+            <li><a href="facebook.com">facebook</a></li>
+            <li><a href="TikTok.com">Tiktok</a></li>
+        </ul>
+
+        <!--&copy; el simbolo ese del final-->
+        <p>&copy; 2025 Eder Gracia </p>
+    </footer>
+
+</body>
+</html>
