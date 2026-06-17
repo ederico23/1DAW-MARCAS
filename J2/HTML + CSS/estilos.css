@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Courier New', monospace;
+    color: #ffffff;
+    background-color: #0a0a0a;
+}
+
+header {
+    background-color: #0a0a0a;
+    border-bottom: 3px solid #00ff00;
+}
+
+header h1{
+    color: #00ff00;
+}
+
+
+/*para los productos destacados */
+section {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+article {
+    flex: 1; /*ocupan el mismo ancho los dos article*/
+    background-color: #0a0a0a;
+    border: 3px solid #00ff00;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #00ff00;
+}
+
+article img {
+    width: 100%;
+}
+
+.precio {
+    color: #00ff00;
+}
+
+article button {
+    background-color: #00ff00;
+    color: #0a0a0a;
+    border-radius: 3px;
+    padding: 10px 20px;
+}
+
+article button:hover {
+    background-color: #00cc00;
+}
+
+table {
+    width: 100%;
+    border: 2px solid #00ff00;
+    background-color: #0a0a0a;
+    border-color: #00ff00;
+    margin: 20px;
+}
+
+th {
+    background-color: #00ff00;
+    color: black;
+    padding: 10px;
+}
+
+td {
+    border: 2px solid #00ff00;
+    background-color: #0a0a0a;
+    color: white;
+}

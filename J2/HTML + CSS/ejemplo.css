@@ -65,23 +65,134 @@ div {
 
 
     PARA FONDO
-    background-color: #0a0a0a;
+    background-color: #0a0a0a; <------------- COLOR DE FONDO
 
 
     PARA TAMAÑO
-    width: 100%;
-    max-width: 500px;
-    height: 100px;
+    width: 100%; <--------------------------- ANCHO, OCUPA EL 100% DEL ESPACIO DISPONIBLE
+    max-width: 500px; <------------------- ANCHO MAXIMO AUNQUE LA PANTALLA SEA MAS GRANDE 
+    height: 100px; <----------------------ALTO 
 
     PARA BORDE
-    border: 3px solid #0a0a0a;
-    border-bottom: 3px solid #0a0a0a;
-    border-radius: 8px;
+    border: 3px solid #0a0a0a; <------------ GROSOR, TIPO, COLOR
+    border-bottom: 3px solid #0a0a0a; <----------SOLO EL BORDE DE ABAJO
+    border-radius: 8px; <--------------------- ESQUINAS REDONDEADAS
     
     PARA SOMBRA
-    box-shadow: 0 0 10px #0a0a0a;
+    box-shadow: 0 0 10px #0a0a0a; <------------ X, Y, DIFUMINADO, COLOR
 
     PARA CURSOR
-    cursor: pointer;
+    cursor: pointer; <-------- MANITA AL PASAR EL RATON PARA BOTONES
 
+*/
+
+
+/*
+
+    FLEXBOX PARA PONER ELEMENTOS EN FILA O COLUMNA
+    sirve para que los elemetnos se apilen verticalmente por defecto 
+
+    
+    section { solo se aplica al contenedor padre
+        display: flex <---------------- ACTIVA EL FLEXBOX EN LOS HIJOS DIRECTOS
+        flex-direction: row; <-----------FILA HORIZONTAL (ES EL VALOR POR DEFECTO
+        gap: 20px; <-------------------ESPACIO ENTRE LOS HIJOS
+        justify-content: space-between <-----DISTRIBUYE EL ESPACIO ENTRE ELLOS
+    }
+
+
+    para centrar algo en un formulario de manera horizontal
+    form {
+        max-widght: 500px;
+        margin: 0 auto; <--------auto en izq y en drc, entonces centrado
+    }
+
+*/
+
+
+/*
+
+    HOVER, ESTILOS AL PASAR EL RATON
+
+    estado normal:
+    nav a{
+        color: #ffffff
+    }
+
+    estado al pasar el raton :hover
+    nav a:hover {
+        color: #00ff00
+    }
+
+*/
+
+
+
+/*
+    
+    BOX-SIZING: BORDER BOX
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+*/
+
+
+/*
+
+    RESPONSIVE 
+
+    estilos normales para pantallas grandes
+    section {
+        display: flex;
+        flex-direction: row;
+    }
+
+
+    estilos solo para pantallas menores de 768px
+    @media (max-width: 768px) {
+        section{
+            flex-direction: column <---- EN MOVIL VA HACIA ABAJO, COMO UNA COLUMNA
+        }
+
+        nav a {
+            displat: block; <---EN MOVIL, LOS ENLACES VAN UNO DEBAJO DE OTRO
+        }
+
+        footer {
+            flex-direction: column;
+        }
+
+    }
+
+*/
+
+
+/*
+    
+    SELECTORES ESPECIALES
+
+    por tipo de atributo -  para diferenciar entre enviar y borrar
+    button[type="submit"] {
+        background-color: #00ff00;
+    }
+
+    button[type="reset"] {
+            background-color: #ff0000;
+    }
+
+    
+    descendiente - afecta a los a que esten dentro del nav
+    nav a {
+        color: white;
+    }
+
+    
+    hijo directo - afeta a los li hijos directos de ul
+    ul > li {
+        margin-bottom: 5px;
+    }
 */
