@@ -1,0 +1,14 @@
+<?xml version ="1.0" encoding ="UTF-8"?>
+
+<incidencias xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:noNamespaceSchemaLocation="incidencias.xsd">
+    
+    <incidencia id_incidencia="INC-2026-001">
+        <descripcion>Error</descripcion>
+        <prioridad>Baja</prioridad>
+        <nivel_impacto>4</nivel_impacto>
+        <tecnico>
+            Juan
+        </tecnico>
+    </incidencia>
+</incidencias>

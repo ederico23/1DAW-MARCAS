@@ -1,0 +1,12 @@
+<!ELEMENT biblioteca (recurso+)>
+
+<!ELEMENT recurso (titulo, autor+, formato, numero_paginas?)>
+<!ATTLIST recurso 
+    codigo ID #REQUIRED
+    estado (Disponible | Prestado) #REQUIRED>
+
+
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT autor (#PCDATA)>
+<!ELEMENT formato (#PCDATA)>
+<!ELEMENT numero_paginas (#PCDATA)>

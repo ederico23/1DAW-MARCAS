@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE biblioteca SYSTEM "recursos.dtd">
+
+<biblioteca>
+    <recurso codigo="L01" estado="Disponible">
+        <titulo>DAW</titulo>
+        <autor>Eder</autor>
+        <formato>PDF</formato>
+        <numero_paginas>100</numero_paginas>
+    </recurso>
+</biblioteca>

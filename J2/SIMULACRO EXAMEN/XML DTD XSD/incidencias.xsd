@@ -1,0 +1,52 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    
+<xs:simpleType name="tipoId">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="INC-2026-[0-9]{3}"></xs:pattern>
+        </xs:restriction>
+</xs:simpleType>
+    
+    
+<xs:simpleType name="tipoPrioridad">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Baja"></xs:enumeration>
+            <xs:enumeration value="Media"></xs:enumeration>
+            <xs:enumeration value="Alta"></xs:enumeration>
+        </xs:restriction>
+</xs:simpleType>    
+    
+    
+<xs:simpleType name="tipoImpacto">
+        <xs:restriction base="xs:integer">
+            <xs:minInclusive value="1"></xs:minInclusive>
+            <xs:maxInclusive value="5"></xs:maxInclusive>
+        </xs:restriction>
+</xs:simpleType>
+    
+       
+    
+<xs:complexType name="tipoIncidencia">
+        <xs:sequence>
+            
+            <xs:element name="descripcion" type="xs:string"></xs:element>
+            
+            <xs:element name="prioridad" type="tipoPrioridad"></xs:element>
+            
+            <xs:element name="nivel_impacto" type="tipoImpacto"></xs:element>
+            
+            <xs:element name="tecnico" type="xs:string" minOccurs="1" maxOccurs="2"/>
+        </xs:sequence>
+        
+        <xs:attribute name="id_incidencia" type="tipoId" use="required"></xs:attribute>
+</xs:complexType>
+    
+<xs:element name="incidencias">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="incidencia" type="tipoIncidencia" minOccurs="1" maxOccurs="unbounded"></xs:element>
+            </xs:sequence>
+        </xs:complexType>
+</xs:element>
+    
+</xs:schema>
